@@ -110,7 +110,7 @@ function Navbar({ children }) {
   });
 
   return (
-    <PageContext.Provider value={state}>
+    <PageContext.Provider value={{state, dispatch}}>
       <Box
         backgroundColor="#262626"
         display="flex"

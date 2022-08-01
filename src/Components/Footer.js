@@ -20,6 +20,7 @@ import {
   FaLinkedin,
   FaInstagram,
 } from 'react-icons/fa';
+import { useWindowSize } from 'react-use';
 
 function Footer() {
   const EMAIL_REGEX =
@@ -27,6 +28,7 @@ function Footer() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const { width } = useWindowSize();
   const toast = useToast();
 
   async function submitForm() {
@@ -88,60 +90,41 @@ function Footer() {
   return (
     <Box backgroundColor="whitesmoke" marginTop="2rem">
       <Center>
-        <HStack
-          justifyContent="space-around"
-          alignItems="flex-start"
-          paddingTop="1rem"
-          paddingBottom="1rem"
-          spacing="40px"
-        >
-          <Stack>
-            <Text fontWeight="bold" fontSize="xl">
-              Address
-            </Text>
-            <br />
-            <Text>
-              C-Wing, LT-1/2 Lawns, BITS-Pilani, K.K. Birla Goa Campus,
-            </Text>
-            <br />
-            <Text>Near NH-17 Bypass road, Zuarinagar</Text>
-            <br />
-            <Text>Goa, 403726</Text>
-          </Stack>
-          <Stack align="flex-start">
-            <Text
-              textAlign="center"
-              fontWeight="bold"
-              fontSize="xl"
-              marginLeft="4"
-            >
-              Reach Out
-            </Text>
-            <Button
-              colorScheme="none"
-              color="black"
-              onClick={e => {
-                navigator.clipboard.writeText('+91 9769037312').then(() =>
-                  toast({
-                    title: 'Copied to clipboard',
-                    status: 'success',
-                    position: 'top',
-                    duration: 9000,
-                    isClosable: true,
-                  })
-                );
-              }}
-              leftIcon={<FaPhone />}
-            >
-              +91 9769037312
-            </Button>
-            <Button
-              colorScheme="none"
-              color="black"
-              onClick={e => {
-                navigator.clipboard
-                  .writeText('ic.sandbox@goa.bits-pilani.ac.in')
-                  .then(() =>
+        {width > 768 && (
+          <HStack
+            justifyContent="space-around"
+            alignItems="flex-start"
+            paddingTop="1rem"
+            paddingBottom="1rem"
+            spacing="40px"
+          >
+            <Stack>
+              <Text fontWeight="bold" fontSize="xl">
+                Address
+              </Text>
+              <br />
+              <Text>
+                C-Wing, LT-1/2 Lawns, BITS-Pilani, K.K. Birla Goa Campus,
+              </Text>
+              <br />
+              <Text>Near NH-17 Bypass road, Zuarinagar</Text>
+              <br />
+              <Text>Goa, 403726</Text>
+            </Stack>
+            <Stack align="flex-start">
+              <Text
+                textAlign="center"
+                fontWeight="bold"
+                fontSize="xl"
+                marginLeft="4"
+              >
+                Reach Out
+              </Text>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={e => {
+                  navigator.clipboard.writeText('+91 9769037312').then(() =>
                     toast({
                       title: 'Copied to clipboard',
                       status: 'success',
@@ -150,83 +133,241 @@ function Footer() {
                       isClosable: true,
                     })
                   );
-              }}
-              leftIcon={<FaEnvelope />}
-            >
-              ic.sandbox@goa.bits-pilani.ac.in
-            </Button>
-            <Button
-              colorScheme="none"
-              color="black"
-              onClick={() =>
-                window.open('https://www.facebook.com/SandboxBPGC/', '_blank')
-              }
-              leftIcon={<FaFacebook />}
-            >
-              FaceBook
-            </Button>
-            <Button
-              colorScheme="none"
-              color="black"
-              onClick={() =>
-                window.open(
-                  'https://www.linkedin.com/company/sandbox-innovation-lab/about/',
-                  '_blank'
-                )
-              }
-              leftIcon={<FaLinkedin />}
-            >
-              LinkedIn
-            </Button>
-            <Button
-              colorScheme="none"
-              color="black"
-              onClick={() =>
-                window.open(
-                  'https://www.instagram.com/sandbox_bitsg/',
-                  '_blank'
-                )
-              }
-              leftIcon={<FaInstagram />}
-            >
-              Instagram
-            </Button>
+                }}
+                leftIcon={<FaPhone />}
+              >
+                +91 9769037312
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={e => {
+                  navigator.clipboard
+                    .writeText('ic.sandbox@goa.bits-pilani.ac.in')
+                    .then(() =>
+                      toast({
+                        title: 'Copied to clipboard',
+                        status: 'success',
+                        position: 'top',
+                        duration: 9000,
+                        isClosable: true,
+                      })
+                    );
+                }}
+                leftIcon={<FaEnvelope />}
+              >
+                ic.sandbox@goa.bits-pilani.ac.in
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={() =>
+                  window.open('https://www.facebook.com/SandboxBPGC/', '_blank')
+                }
+                leftIcon={<FaFacebook />}
+              >
+                FaceBook
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={() =>
+                  window.open(
+                    'https://www.linkedin.com/company/sandbox-innovation-lab/about/',
+                    '_blank'
+                  )
+                }
+                leftIcon={<FaLinkedin />}
+              >
+                LinkedIn
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={() =>
+                  window.open(
+                    'https://www.instagram.com/sandbox_bitsg/',
+                    '_blank'
+                  )
+                }
+                leftIcon={<FaInstagram />}
+              >
+                Instagram
+              </Button>
+            </Stack>
+            <Stack>
+              <Text fontWeight="bold" fontSize="xl">
+                Contact Us
+              </Text>
+              <FormControl>
+                <FormLabel>Name</FormLabel>
+                <Input
+                  placeholder="Your name"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
+                />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Email</FormLabel>
+                <Input
+                  placeholder="Your email"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                />
+                <FormHelperText>We will not share your email</FormHelperText>
+              </FormControl>
+              <FormControl>
+                <FormLabel>Message</FormLabel>
+                <Textarea
+                  placeholder="Your message"
+                  value={message}
+                  marginBottom="0.5rem"
+                  onChange={e => setMessage(e.target.value)}
+                />
+              </FormControl>
+              <Button colorScheme="teal" onClick={submitForm}>
+                Submit
+              </Button>
+            </Stack>
+          </HStack>
+        )}
+        {width <= 768 && (
+          <Stack
+            justifyContent="space-around"
+            alignItems="flex-start"
+            paddingTop="1rem"
+            paddingLeft="1rem"
+            paddingBottom="1rem"
+            spacing="40px"
+          >
+            <Stack>
+              <Text fontWeight="bold" fontSize="xl">
+                Address
+              </Text>
+              <br />
+              <Text>
+                C-Wing, LT-1/2 Lawns, BITS-Pilani, K.K. Birla Goa Campus,
+              </Text>
+              <br />
+              <Text>Near NH-17 Bypass road, Zuarinagar</Text>
+              <br />
+              <Text>Goa, 403726</Text>
+            </Stack>
+            <Stack align="flex-start">
+              <Text textAlign="center" fontWeight="bold" fontSize="xl">
+                Reach Out
+              </Text>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={e => {
+                  navigator.clipboard.writeText('+91 9769037312').then(() =>
+                    toast({
+                      title: 'Copied to clipboard',
+                      status: 'success',
+                      position: 'top',
+                      duration: 9000,
+                      isClosable: true,
+                    })
+                  );
+                }}
+                leftIcon={<FaPhone />}
+              >
+                +91 9769037312
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={e => {
+                  navigator.clipboard
+                    .writeText('ic.sandbox@goa.bits-pilani.ac.in')
+                    .then(() =>
+                      toast({
+                        title: 'Copied to clipboard',
+                        status: 'success',
+                        position: 'top',
+                        duration: 9000,
+                        isClosable: true,
+                      })
+                    );
+                }}
+                leftIcon={<FaEnvelope />}
+              >
+                ic.sandbox@goa.bits-pilani.ac.in
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={() =>
+                  window.open('https://www.facebook.com/SandboxBPGC/', '_blank')
+                }
+                leftIcon={<FaFacebook />}
+              >
+                FaceBook
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={() =>
+                  window.open(
+                    'https://www.linkedin.com/company/sandbox-innovation-lab/about/',
+                    '_blank'
+                  )
+                }
+                leftIcon={<FaLinkedin />}
+              >
+                LinkedIn
+              </Button>
+              <Button
+                colorScheme="none"
+                color="black"
+                onClick={() =>
+                  window.open(
+                    'https://www.instagram.com/sandbox_bitsg/',
+                    '_blank'
+                  )
+                }
+                leftIcon={<FaInstagram />}
+              >
+                Instagram
+              </Button>
+            </Stack>
+            <Stack>
+              <Text fontWeight="bold" fontSize="xl">
+                Contact Us
+              </Text>
+              <FormControl>
+                <FormLabel>Name</FormLabel>
+                <Input
+                  placeholder="Your name"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
+                />
+              </FormControl>
+              <FormControl>
+                <FormLabel>Email</FormLabel>
+                <Input
+                  placeholder="Your email"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                />
+                <FormHelperText>We will not share your email</FormHelperText>
+              </FormControl>
+              <FormControl>
+                <FormLabel>Message</FormLabel>
+                <Textarea
+                  placeholder="Your message"
+                  value={message}
+                  marginBottom="0.5rem"
+                  onChange={e => setMessage(e.target.value)}
+                />
+              </FormControl>
+              <Button colorScheme="teal" onClick={submitForm}>
+                Submit
+              </Button>
+            </Stack>
           </Stack>
-          <Stack>
-            <Text fontWeight="bold" fontSize="xl">
-              Contact Us
-            </Text>
-            <FormControl>
-              <FormLabel>Name</FormLabel>
-              <Input
-                placeholder="Your name"
-                value={name}
-                onChange={e => setName(e.target.value)}
-              />
-            </FormControl>
-            <FormControl>
-              <FormLabel>Email</FormLabel>
-              <Input
-                placeholder="Your email"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-              />
-              <FormHelperText>We will not share your email</FormHelperText>
-            </FormControl>
-            <FormControl>
-              <FormLabel>Message</FormLabel>
-              <Textarea
-                placeholder="Your message"
-                value={message}
-                marginBottom="0.5rem"
-                onChange={e => setMessage(e.target.value)}
-              />
-            </FormControl>
-            <Button colorScheme="teal" onClick={submitForm}>
-              Submit
-            </Button>
-          </Stack>
-        </HStack>
+        )}
       </Center>
     </Box>
   );

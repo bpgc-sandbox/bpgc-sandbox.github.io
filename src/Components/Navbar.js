@@ -110,7 +110,7 @@ function Navbar({ children }) {
   });
 
   return (
-    <PageContext.Provider value={{state, dispatch}}>
+    <PageContext.Provider value={{ state, dispatch }}>
       <Box
         backgroundColor="#262626"
         display="flex"
@@ -157,7 +157,7 @@ function Navbar({ children }) {
               <DrawerOverlay />
               <DrawerContent>
                 <DrawerCloseButton />
-                <DrawerHeader>SANDBOX</DrawerHeader>
+                <DrawerHeader textAlign="center">SANDBOX</DrawerHeader>
                 <DrawerBody>
                   <Center>
                     <UnorderedList listStyleType="none">
@@ -166,7 +166,10 @@ function Navbar({ children }) {
                           key={index}
                           marginTop="3rem"
                           cursor="pointer"
-                          onClick={() => dispatch(link)}
+                          onClick={() => {
+                            onClose();
+                            dispatch(link);
+                          }}
                         >
                           {link}
                         </ListItem>

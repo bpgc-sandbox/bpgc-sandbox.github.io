@@ -23,7 +23,10 @@ function Home() {
   const { state, dispatch } = usePage();
   return (
     state.home && (
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <Box
           color="white"
           backgroundImage={bg}
@@ -41,7 +44,7 @@ function Home() {
             transition={{ type: 'tween' }}
             top="40%"
             left="15%"
-            width="15%"
+            width="13rem"
           >
             <Heading>Welcome to Sandbox</Heading>
             <Text marginTop="1rem" fontSize="md">

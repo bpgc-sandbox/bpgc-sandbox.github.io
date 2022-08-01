@@ -35,7 +35,7 @@ function Projects() {
             initial={{ y: 200 }}
             animate={{ y: 0 }}
           >
-            <Heading>Projects</Heading>
+            <Heading textAlign="center">Projects</Heading>
             <Text>These are some of our projects</Text>
           </Stack>
         </Box>

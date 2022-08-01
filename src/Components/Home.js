@@ -7,6 +7,7 @@ import {
   Flex,
   Image,
   Center,
+  SimpleGrid,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { usePage } from './Navbar';
@@ -14,10 +15,9 @@ import { FaPlayCircle } from 'react-icons/fa';
 import bg from '../assets/bulb.jpg';
 import about from '../assets/aboutus.png';
 import video from '../assets/video.mp4';
-import biped from '../assets/biped.min.png';
-import modbot from '../assets/modbot.jpeg';
-import imitato from '../assets/imitato.min.png';
 import Footer from './Footer';
+import { homeProjects as projects } from '../utils/projects';
+import Cards from './Cards';
 
 function Home() {
   const { state, dispatch } = usePage();
@@ -107,57 +107,19 @@ function Home() {
             Labs.
           </Text>
           <br />
-          <Flex justifyContent="center">
-            <Box maxW="sm" borderWidth="1px" borderRadius="lg">
-              <Image src={biped} height="18rem" width="25rem" maxWidth="100%" />
-              <Box padding="2" textAlign="justify">
-                <Text color="teal" fontSize="xl">
-                  Biped{' '}
-                </Text>
-                <Text fontSize="lg">
-                  Robots are robotic modules with high stability and degrees of
-                  freedom, being developed for the purpose of traversing places
-                  where neither humans nor bots with wheels can go.
-                </Text>
-              </Box>
-            </Box>
-            <Box maxW="sm" borderWidth="1px" marginLeft="2" borderRadius="lg">
-              <Image
-                src={modbot}
-                height="18rem"
-                width="25rem"
-                maxWidth="100%"
-              />
-              <Box padding="2" textAlign="justify">
-                <Text color="teal" fontSize="xl">
-                  Modular Robots
-                </Text>
-                <Text fontSize="lg">
-                  The project aims to build reconfigurable robots made up of
-                  small modules which may have common or distinct functionality
-                  based on the application.
-                </Text>
-              </Box>
-            </Box>
-            <Box maxW="sm" borderWidth="1px" marginLeft="2" borderRadius="lg">
-              <Image
-                src={imitato}
-                height="18rem"
-                width="25rem"
-                maxWidth="100%"
-              />
-              <Box padding="2" textAlign="justify">
-                <Text color="teal" fontSize="xl">
-                  Imitato{' '}
-                </Text>
-                <Text fontSize="lg">
-                  BIT Secure is a matchbox-sized handy gadget, which assures the
-                  safety and security of personal belongings such as luggage,
-                  purses containing valuables and more.
-                </Text>
-              </Box>
-            </Box>
-          </Flex>
+          <Center>
+            <SimpleGrid spacing="40px" columns={{ base: 1, md: 3 }}>
+              {projects.map((project, i) => (
+                <Cards
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  summary={project.summary}
+                  key={i}
+                />
+              ))}
+            </SimpleGrid>
+          </Center>
           <br />
           <Text>
             View more{' '}

@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react';
 import { useWindowSize } from 'react-use';
 import { FaBars } from 'react-icons/fa';
+import Footer from './Footer';
 import sandbox from '../assets/SandboxLogo.min.jpg';
 
 function reducer(state, action) {
@@ -183,6 +184,7 @@ function Navbar({ children }) {
         )}
       </Box>
       {children}
+      <Footer />
     </PageContext.Provider>
   );
 }

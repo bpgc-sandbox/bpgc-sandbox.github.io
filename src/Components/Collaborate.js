@@ -17,7 +17,6 @@ import {
   Text,
 } from '@chakra-ui/react';
 import bg from '../assets/projects.jpg';
-import Footer from './Footer';
 
 function Collaborate() {
   const { state } = usePage();
@@ -108,10 +107,10 @@ function Collaborate() {
           </Box>
         </Center>
         <Box marginTop="2rem" paddingBottom="1rem" background="whitesmoke">
-          <Heading color="teal" fontSize="5xl" textAlign="center">
-            Frequently Asked Questions
-          </Heading>
-          <Container marginTop="2rem">
+          <Container paddingTop="2rem" maxWidth="container.lg">
+            <Heading color="teal"marginBottom="2rem" fontSize="5xl" textAlign="center">
+              Frequently Asked Questions
+            </Heading>
             <Accordion spacing="3rem" allowToggle>
               <AccordionItem>
                 <h2>
@@ -167,7 +166,6 @@ function Collaborate() {
             </Accordion>
           </Container>
         </Box>
-        <Footer />
       </motion.div>
     )
   );

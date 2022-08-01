@@ -10,7 +10,6 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { usePage } from './Navbar';
 import bg from '../assets/projects.jpg';
-import Footer from './Footer';
 import { projects } from '../utils/projects';
 import Cards from './Cards';
 
@@ -56,7 +55,6 @@ function Projects() {
             ))}
           </SimpleGrid>
         </Center>
-        <Footer />
       </motion.div>
     )
   );

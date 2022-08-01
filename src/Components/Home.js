@@ -15,7 +15,7 @@ import { FaPlayCircle } from 'react-icons/fa';
 import bg from '../assets/bulb.jpg';
 import about from '../assets/aboutus.png';
 import video from '../assets/video.mp4';
-import Footer from './Footer';
+
 import { homeProjects as projects } from '../utils/projects';
 import Cards from './Cards';
 
@@ -23,10 +23,7 @@ function Home() {
   const { state, dispatch } = usePage();
   return (
     state.home && (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Box
           color="white"
           backgroundImage={bg}
@@ -67,7 +64,7 @@ function Home() {
         <Center marginTop="2rem">
           <Flex width="60%">
             <Box>
-              <Heading color="#364d59 " fontSize="6xl">
+              <Heading color="teal " fontSize="6xl">
                 About Us
               </Heading>
               <Text marginTop="2rem" fontSize="lg">
@@ -101,7 +98,7 @@ function Home() {
           </Flex>
         </Center>
         <Box textAlign="center" marginTop="6rem">
-          <Heading color="#364d59 " fontSize="6xl">
+          <Heading color="teal " fontSize="6xl">
             Projects
           </Heading>
           <br />
@@ -136,7 +133,6 @@ function Home() {
             </Text>
           </Text>
         </Box>
-        <Footer />
       </motion.div>
     )
   );

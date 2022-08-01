@@ -1,5 +1,5 @@
 import { Box, Flex, IconButton, Image, Text, useToast } from '@chakra-ui/react';
-import { FaMobile, FaEnvelopeOpen, FaLinkedin, FaLink } from 'react-icons/fa';
+import { FaPhone, FaEnvelopeOpen, FaLinkedin, FaLink } from 'react-icons/fa';
 import React from 'react';
 
 function MemberCard({
@@ -40,7 +40,7 @@ function MemberCard({
               color="black"
               colorScheme="none"
               onClick={() => copy(mobile)}
-              icon={<FaMobile />}
+              icon={<FaPhone />}
             />
           )}
           {email && (
@@ -55,7 +55,7 @@ function MemberCard({
             <IconButton
               color="black"
               colorScheme="none"
-              onClick={() => copy(linkedIn)}
+              onClick={() => window.open(linkedIn, '_blank')}
               icon={<FaLinkedin />}
             />
           )}

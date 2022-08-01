@@ -12,7 +12,6 @@ import { usePage } from './Navbar';
 import bg from '../assets/members.jpg';
 import MemberCard from './MemberCard';
 import { student as students, faculty } from '../utils/members.js';
-import Footer from './Footer';
 
 function Members() {
   const { state } = usePage();
@@ -44,7 +43,7 @@ function Members() {
           </Stack>
         </Box>
         <Box marginTop="2rem">
-          <Heading textAlign="center" color="teal" fontSize='5xl'>
+          <Heading textAlign="center" color="teal" fontSize="5xl">
             Student Members
           </Heading>
           <Center>
@@ -67,7 +66,7 @@ function Members() {
           </Center>
         </Box>
         <Box marginTop="2rem">
-          <Heading textAlign="center" color="teal" fontSize='5xl'>
+          <Heading textAlign="center" color="teal" fontSize="5xl">
             Faculty Members
           </Heading>
           <Center>
@@ -87,7 +86,6 @@ function Members() {
             </SimpleGrid>
           </Center>
         </Box>
-        <Footer />
       </motion.div>
     )
   );

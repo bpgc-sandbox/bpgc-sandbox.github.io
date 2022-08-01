@@ -44,7 +44,7 @@ function Members() {
           </Stack>
         </Box>
         <Box marginTop="2rem">
-          <Heading textAlign="center" color="teal">
+          <Heading textAlign="center" color="teal" fontSize='5xl'>
             Student Members
           </Heading>
           <Center>
@@ -67,7 +67,7 @@ function Members() {
           </Center>
         </Box>
         <Box marginTop="2rem">
-          <Heading textAlign="center" color="teal">
+          <Heading textAlign="center" color="teal" fontSize='5xl'>
             Faculty Members
           </Heading>
           <Center>

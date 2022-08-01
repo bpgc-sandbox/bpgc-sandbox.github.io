@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Projects from './Components/Projects';
 import Members from './Components/Members';
+import Collaborate from './Components/Collaborate';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Home />
         <Projects />
         <Members />
+        <Collaborate />
       </Navbar>
     </ChakraProvider>
   );

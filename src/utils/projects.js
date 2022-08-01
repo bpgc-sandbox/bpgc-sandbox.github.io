@@ -2,7 +2,7 @@ import biped from '../assets/biped.min.png';
 import modbot from '../assets/modbot.jpeg';
 import imitato from '../assets/imitato.min.png';
 
-export const homeProjects = [
+let homeProjects = [
   {
     title: 'Biped',
     description:
@@ -52,4 +52,19 @@ export const homeProjects = [
   },
 ];
 
-export const projects = [...homeProjects ];
+let projects = [...homeProjects ];
+
+function compare( a, b ) {
+  if ( a.title < b.title ){
+    return -1;
+  }
+  if ( a.title > b.title ){
+    return 1;
+  }
+  return 0;
+}
+
+homeProjects.sort(compare);
+projects.sort(compare);
+
+export {homeProjects, projects};

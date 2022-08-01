@@ -66,7 +66,24 @@ function Footer() {
           isClosable: true,
         });
       } else {
-        // Submit form here
+        let res = await fetch(
+          `https://formspree.io/f/${process.env.REACT_APP_CODE}`,
+          {
+            method: 'POST',
+            body: JSON.stringify({ name, email, message }),
+            headers: {
+              Accept: 'application/json',
+            },
+          }
+        );
+        res = await res.json();
+        if (res.error) {
+          console.log(res.errors);
+          throw Error('An error occured while sending the message');
+        }
+        setName('');
+        setEmail('');
+        setMessage('');
         toast({
           title: 'Message sent successfully',
           status: 'success',

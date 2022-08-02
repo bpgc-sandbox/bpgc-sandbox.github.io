@@ -3,6 +3,8 @@ import ananth from '../assets/students/ananth.jpg';
 import pravin from '../assets/faculty/pravin.jpeg';
 import indrani from '../assets/faculty/indrani.jpeg';
 import yash from '../assets/students/yash.jpeg';
+import sakshi from '../assets/students/sakshi.jpeg';
+import yelmame from '../assets/students/yelmame.jpeg';
 
 let student = [
   {
@@ -19,6 +21,20 @@ let student = [
     linkedIn: 'https://www.linkedin.com/in/yash-saini-8a00b01a6',
     image: yash,
   },
+  {
+    name: 'Yash Yelmame',
+    mobile: '+918623003043',
+    email: 'f20201224@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/yash-yelmame-a68165205/',
+    image: yelmame,
+  },
+  {
+    name: 'Sakshi Gupta',
+    mobile: '+919903830434',
+    email: 'f20202036@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/sakshi-gupta-20a715203/',
+    image: sakshi,
+  }
 ];
 
 let faculty = [
@@ -35,10 +51,10 @@ let faculty = [
 ];
 
 function compare( a, b ) {
-  if ( a.title < b.title ){
+  if ( a.name < b.name ){
     return -1;
   }
-  if ( a.title > b.title ){
+  if ( a.name > b.name ){
     return 1;
   }
   return 0;

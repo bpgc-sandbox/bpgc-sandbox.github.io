@@ -386,7 +386,7 @@ function Footer() {
           </Stack>
         )}
       </Center>
-      <Text color="gold" marginTop="3" marginBottom="3" fontSize='xl' textAlign="center">
+      <Text color="gold" marginTop="3" paddingBottom="3" fontSize='xl' textAlign="center">
         Copyright All Rights Reserved
       </Text>
     </Box>

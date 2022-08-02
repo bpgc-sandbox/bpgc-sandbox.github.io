@@ -18,9 +18,11 @@ import {
 } from '@chakra-ui/react';
 import { collabFaq as faqs } from '../utils/faqs';
 import bg from '../assets/projects.jpg';
+import { useWindowSize } from 'react-use';
 
 function Collaborate() {
   const { state } = usePage();
+  const { width } = useWindowSize();
   return (
     state.collab && (
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -121,7 +123,7 @@ function Collaborate() {
               {faqs.map((faq, i) => (
                 <AccordionItem key={i}>
                   <h2>
-                    <AccordionButton height="4rem">
+                    <AccordionButton height={width > 600 ? '4rem' : 'auto'}>
                       <Box flex="1" textAlign="left">
                         <Text color="gold" fontSize="xl">
                           {faq.question}

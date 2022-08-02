@@ -1,6 +1,6 @@
-import ananth from '../assets/ananth.jpg';
-// import pravin from '../assets/pravin.min.png';
-import pravin from '../assets/pravin.jpeg';
+import ananth from '../assets/students/ananth.jpg';
+// import pravin from '../assets/faculty/pravin.min.png';
+import pravin from '../assets/faculty/pravin.jpeg';
 
 let student = [
   {

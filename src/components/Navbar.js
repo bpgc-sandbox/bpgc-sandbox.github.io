@@ -131,7 +131,7 @@ function Navbar({ children }) {
             alignItems="center"
             justifyContent="space-around"
             width="40%"
-            color="#efba6c"
+            color="gold"
             listStyleType="none"
           >
             {links.map((link, index) => (

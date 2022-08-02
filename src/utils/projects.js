@@ -1,6 +1,6 @@
-import biped from '../assets/biped.min.png';
-import modbot from '../assets/modbot.jpeg';
-import imitato from '../assets/imitato.min.png';
+import biped from '../assets/projects/biped.min.png';
+import modbot from '../assets/projects/modbot.jpeg';
+import imitato from '../assets/projects/imitato.min.png';
 
 let homeProjects = [
   {

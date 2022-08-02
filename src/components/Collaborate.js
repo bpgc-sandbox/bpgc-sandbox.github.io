@@ -16,6 +16,7 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
+import { collabFaq as faqs } from '../utils/faqs';
 import bg from '../assets/projects.jpg';
 
 function Collaborate() {
@@ -108,61 +109,32 @@ function Collaborate() {
         </Center>
         <Box marginTop="2rem" paddingBottom="1rem" background="whitesmoke">
           <Container paddingTop="2rem" maxWidth="container.lg">
-            <Heading color="teal"marginBottom="2rem" fontSize="5xl" textAlign="center">
+            <Heading
+              color="teal"
+              marginBottom="2rem"
+              fontSize="5xl"
+              textAlign="center"
+            >
               Frequently Asked Questions
             </Heading>
             <Accordion spacing="3rem" allowToggle>
-              <AccordionItem>
-                <h2>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      How do you think collaboration with companies help improve
-                      the technical culture of our campus?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </h2>
-                <AccordionPanel pb={4}>
-                  A collaboration will be beneficial to all the parties
-                  involved. The company will get bright technical assistance at
-                  a very low cost, the students will get the experience and
-                  training from working on real world projects, and everyone
-                  will get more publicity. The ideas from industry are more
-                  practical and students and companies can collaborate on
-                  solutions and products - the companies willing to sponsor some
-                  devices given specific requirements can collaborate with the
-                  students who can work on those particular requirements.
-                </AccordionPanel>
-              </AccordionItem>
-              <AccordionItem>
-                <h2>
-                  <AccordionButton>
-                    <Box flex="1" textAlign="left">
-                      How does the Sandbox set us apart from other colleges and
-                      universities in India?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </h2>
-                <AccordionPanel pb={4}>
-                  Though Sandbox is still in its early stages, we are able to
-                  provide the students will excellent facilities that they have
-                  used to their advantage. Students in our campus can now get
-                  free access to equipment that others only dream of. The
-                  experience gained by the students working in Sandbox has also
-                  helped them a lot as is evident by 3 students going for their
-                  thesis in Portugal, 1 in USA, 1 in Singapore, 1 for a summer
-                  internship in Amazon and another in Navstik Labs and many
-                  more.
-                  <br />
-                  <br />
-                  Similar to the fact that a healthy mind lives in a healtyh
-                  body, having a facility like Sandbox helps one to do better
-                  research and development. We still have a long way to go and
-                  we only hope to be comparable if not better to other fablabs
-                  in developed countries.
-                </AccordionPanel>
-              </AccordionItem>
+              {faqs.map((faq, i) => (
+                <AccordionItem key={i}>
+                  <h2>
+                    <AccordionButton height="4rem">
+                      <Box flex="1" textAlign="left">
+                        <Text color="gold" fontSize="xl">
+                          {faq.question}
+                        </Text>
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel whiteSpace="pre-line" pb={4} fontSize="lg">
+                    {faq.answer}
+                  </AccordionPanel>
+                </AccordionItem>
+              ))}
             </Accordion>
           </Container>
         </Box>

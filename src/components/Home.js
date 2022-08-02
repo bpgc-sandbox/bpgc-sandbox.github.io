@@ -18,9 +18,11 @@ import video from '../assets/video.mp4';
 
 import { homeProjects as projects } from '../utils/projects';
 import Cards from './Cards';
+import { useWindowSize } from 'react-use';
 
 function Home() {
   const { state, dispatch } = usePage();
+  const { width } = useWindowSize();
   return (
     state.home && (
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -62,7 +64,10 @@ function Home() {
           </Box>
         </Box>
         <Center marginTop="2rem">
-          <Flex width="60%">
+          <Flex
+            width="60%"
+            flexDirection={width > 800 ? 'row' : 'column'}
+          >
             <Box>
               <Heading color="teal " fontSize="6xl">
                 About Us
@@ -127,7 +132,7 @@ function Home() {
               display="inline"
               cursor="pointer"
               onClick={() => dispatch('Projects')}
-              color="#efba6c"
+              color="gold"
             >
               projects
             </Text>

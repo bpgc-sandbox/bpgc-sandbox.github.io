@@ -4,6 +4,7 @@ import {
   Container,
   Heading,
   Highlight,
+  Link,
   ListItem,
   OrderedList,
   Stack,
@@ -46,22 +47,48 @@ function Access() {
               Proposal
             </Heading>
             <Text fontSize="xl">
-              <Highlight
-                query={['request', 'proposals', 'proposal']}
-                styles={{ color: 'red' }}
-              >
+              <Highlight query={['proposals']} styles={{ color: 'red' }}>
                 Sandbox only accepts proposals for student projects only before
-                the start of the semester. So the form below would close soon
-                (deadline TBA). So don't delay and fill out the form soon! And
-                don't worry, even if your project is not a part of Sandbox, you
-                can still submit a request proposal to use some of the Sandbox
-                facilities inoder to to see your project to completion. Please
-                read the terms and conditions before filling the form.
-              </Highlight>
+                the start of the semester.
+              </Highlight>{' '}
+              So the{' '}
+              <Link
+                color="blue.600"
+                href="https://forms.gle/PDcNnJSZQPCc1wMr7"
+                target="_blank"
+              >
+                form
+              </Link>{' '}
+              would close soon (deadline TBA). So don't delay and fill out the {' '}
+              <Link
+                color="blue.600"
+                href="https://forms.gle/PDcNnJSZQPCc1wMr7"
+                target="_blank"
+              >
+                form
+              </Link>{' '}
+              soon! And don't worry, even if your project is not a part of
+              Sandbox, you can still submit a{' '}
+              <Highlight
+                query={['request proposal']}
+                styles={{ color: 'red' }}
+                children={'request proposal'}
+              />{' '}
+              to use some of the Sandbox facilities inoder to to see your
+              project to completion. Please read the terms and conditions before
+              filling the{' '}
+              <Link
+                color="blue.600"
+                href="https://forms.gle/PDcNnJSZQPCc1wMr7"
+                target="_blank"
+              >
+                form
+              </Link>
+              .
             </Text>
           </Box>{' '}
           <Box paddingTop="2rem" fontSize="xl">
-            <Heading color="teal" marginBottom="2rem">
+            <Heading color="red.500" marginBottom="2rem">
               Terms and Conditions
             </Heading>
             <Text>

@@ -1,6 +1,7 @@
 import biped from '../assets/projects/biped.min.png';
 import modbot from '../assets/projects/modbot.jpeg';
 import imitato from '../assets/projects/imitato.min.png';
+import kratos from '../assets/projects/kratosrover.jpeg';
 
 let homeProjects = [
   {
@@ -20,17 +21,18 @@ let homeProjects = [
     },
   },
   {
-    title: 'Modular Bot',
+    title: 'Mars Rover, Project Kratos',
     description:
-      'The project aims to build reconfigurable robots made up of small modules which may have common or distinct functionality based on the application.',
-    image: modbot,
+      'Project Kratos is a student team that designs and manufactures autonomous, all-terrain Martian rover with a robotic arm and an onboard laboratory for detecting life.',
+    image: kratos,
     summary: {
       brief:
-        'The project aims to build reconfigurable robots made up of small modules which may have common or distinct functionality based on the application.',
+        'The rover is capable of autonomously traversing uneven terrain as experienced in Mars, use its robotic arm to manipulate switches, turn knobs and identify signs of life in rock and soil samples.',
       points: [
-        'These modules can link to each other, locomote individually or in clusters, move relative to each other, and communicate with each other to form a variety of robots in single or multiple tasks.',
-        'The team is trying to achieve three baisc features, namely, Locomotion, Linkage and Movement for which the modules must be able to sense relative positions with respect to each other.',
-        'The Modular Robots will have a variety of applications in geological surveys and data collection, geographical exploration and have several other civil, commercial and military applications.',
+        'Two iterations of prototyping the rover with changes in core mechanical design have already been completed. The team is currently working on the third rover prototype with electrical and software enhancements.',
+        'The rover is equipped with a 5 DoF robotic arm which is driven by two powerful linear actuators. The roll and pitch motion of the end effector is controlled by a differential gear mechanism. A linearly actuated gripper can control the claw motion. The entire arm is supported by a custom-made inverse kinematics algorithm to facilitate its motion.',
+        'The science vertical works on detecting signs of life through custom designed on board science lab, CNN based Machine Learning Model and sensor measurements and application of astrobiology and astrogeology to interpret results of the same.',
+        'Yet another part of the team is working to automate the navigation capabilities of the rover using modern perception, localization, object avoidance and path planning algorithms',
       ],
     },
   },
@@ -52,13 +54,30 @@ let homeProjects = [
   },
 ];
 
-let projects = [...homeProjects ];
+let projects = [
+  ...homeProjects,
+  {
+    title: 'Modular Bot',
+    description:
+      'The project aims to build reconfigurable robots made up of small modules which may have common or distinct functionality based on the application.',
+    image: modbot,
+    summary: {
+      brief:
+        'The project aims to build reconfigurable robots made up of small modules which may have common or distinct functionality based on the application.',
+      points: [
+        'These modules can link to each other, locomote individually or in clusters, move relative to each other, and communicate with each other to form a variety of robots in single or multiple tasks.',
+        'The team is trying to achieve three baisc features, namely, Locomotion, Linkage and Movement for which the modules must be able to sense relative positions with respect to each other.',
+        'The Modular Robots will have a variety of applications in geological surveys and data collection, geographical exploration and have several other civil, commercial and military applications.',
+      ],
+    },
+  },
+];
 
-function compare( a, b ) {
-  if ( a.title < b.title ){
+function compare(a, b) {
+  if (a.title < b.title) {
     return -1;
   }
-  if ( a.title > b.title ){
+  if (a.title > b.title) {
     return 1;
   }
   return 0;
@@ -67,4 +86,4 @@ function compare( a, b ) {
 homeProjects.sort(compare);
 projects.sort(compare);
 
-export {homeProjects, projects};
+export { homeProjects, projects };

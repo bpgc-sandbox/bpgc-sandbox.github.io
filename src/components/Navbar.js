@@ -147,7 +147,12 @@ function Navbar({ children }) {
         )}
         {width <= 1000 && (
           <>
-            <IconButton icon={<FaBars />} ref={btnRef} onClick={onOpen} />
+            <IconButton
+              icon={<FaBars size="1.5rem" />}
+              colorScheme="none"
+              ref={btnRef}
+              onClick={onOpen}
+            />
             <Drawer
               size="md"
               isOpen={isOpen}

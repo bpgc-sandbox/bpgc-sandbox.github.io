@@ -8,14 +8,17 @@ import {
   Image,
   Center,
   SimpleGrid,
+  useDisclosure,
+  Modal,
+  ModalContent,
+  ModalOverlay,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { usePage } from './Navbar';
-import { FaPlayCircle } from 'react-icons/fa';
+import { FaPlayCircle, FaTimes } from 'react-icons/fa';
 import bg from '../assets/bulb.jpg';
 import about from '../assets/aboutus.png';
 import video from '../assets/video.mp4';
-
 import { homeProjects as projects } from '../utils/projects';
 import Cards from './Cards';
 import { useWindowSize } from 'react-use';
@@ -23,9 +26,33 @@ import { useWindowSize } from 'react-use';
 function Home() {
   const { state, dispatch } = usePage();
   const { width } = useWindowSize();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     state.home && (
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Modal isOpen={isOpen} onClose={onClose} size="full" isCentered>
+          <ModalOverlay />
+          <ModalContent height="100%">
+            <IconButton
+              color="white"
+              position="absolute"
+              right="1"
+              top="1"
+              colorScheme="none"
+              icon={<FaTimes size="1.5rem" />}
+              onClick={onClose}
+            />
+            <iframe
+              src={video}
+              width="100%"
+              height="100%"
+              title="Video Player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </ModalContent>
+        </Modal>
         <Box
           color="white"
           backgroundImage={bg}
@@ -52,22 +79,18 @@ function Home() {
               facilities and guidance to the students.
             </Text>
             <Flex alignItems="center" marginTop="1rem">
-              <a href={video} target="blank">
-                <IconButton
-                  fontSize="4xl"
-                  colorScheme="none"
-                  icon={<FaPlayCircle />}
-                />
-              </a>
+              <IconButton
+                onClick={onOpen}
+                fontSize="4xl"
+                colorScheme="none"
+                icon={<FaPlayCircle />}
+              />
               <Text marginLeft="1">Watch the video</Text>
             </Flex>
           </Box>
         </Box>
         <Center marginTop="2rem">
-          <Flex
-            width="60%"
-            flexDirection={width > 800 ? 'row' : 'column'}
-          >
+          <Flex width="60%" flexDirection={width > 800 ? 'row' : 'column'}>
             <Box>
               <Heading color="teal " fontSize="6xl">
                 About Us

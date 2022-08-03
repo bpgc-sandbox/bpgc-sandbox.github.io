@@ -3,7 +3,6 @@ import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './index.css';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);

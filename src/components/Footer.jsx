@@ -67,7 +67,7 @@ function Footer() {
         });
       } else {
         let res = await fetch(
-          `https://formspree.io/f/${process.env.REACT_APP_CODE}`,
+          `https://formspree.io/f/${import.meta.env.VITE_CODE}`,
           {
             method: 'POST',
             body: JSON.stringify({ name, email, message }),

@@ -11,7 +11,7 @@ import React from 'react';
 import { usePage } from './Navbar';
 import bg from '../assets/members.jpg';
 import MemberCard from './MemberCard';
-import { student as students, faculty } from '../utils/members.js';
+import { student as students, faculty } from '../utils/members';
 
 function Members() {
   const { state } = usePage();
@@ -60,6 +60,7 @@ function Members() {
                   mobile={student.mobile}
                   email={student.email}
                   linkedIn={student.linkedIn}
+                  coordi={student.coordi}
                 />
               ))}
             </SimpleGrid>

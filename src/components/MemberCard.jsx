@@ -9,6 +9,7 @@ function MemberCard({
   email = null,
   linkedIn = null,
   url = null,
+  coordi = false,
 }) {
   const toast = useToast();
   function copy(text) {
@@ -33,7 +34,9 @@ function MemberCard({
         borderBottomRightRadius="2px"
       />
       <Box background="whitesmoke" paddingTop="1">
-        <Text textAlign="center">{name}</Text>
+        <Text textAlign="center" color={coordi ? 'gold' : ''}>
+          {name}
+        </Text>
         <Flex justifyContent="center">
           {mobile && (
             <IconButton

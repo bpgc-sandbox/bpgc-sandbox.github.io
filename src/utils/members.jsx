@@ -9,6 +9,7 @@ import sahil from '../assets/students/sahil.png';
 import laukik from '../assets/students/laukik.jpg';
 import ishan from '../assets/students/ishan.jpg';
 import tanay from '../assets/students/tanay.jpeg';
+import dhruv from '../assets/students/dhruv.jpeg';
 
 // import pravin from '../assets/faculty/pravin.min.png';
 import pravin from '../assets/faculty/pravin.jpeg';
@@ -75,6 +76,13 @@ let student = [
     email: 'f20201932@goa.bits-pilani.ac.in',
     linkedIn: 'https://www.linkedin.com/in/laukik-nakhwa-1191bb205/',
     image: laukik,
+  },
+  {
+    name: 'Dhruv Potdar',
+    mobile: '+917045030300',
+    email: 'f20201489@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/dhruvpotdar/',
+    image: dhruv,
   },
   {
     name: 'Tanay Patni',

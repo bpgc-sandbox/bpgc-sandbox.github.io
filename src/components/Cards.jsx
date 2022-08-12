@@ -14,10 +14,11 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import React from 'react';
+import { useWindowSize } from 'react-use';
 
 function Cards({ image, title, description, summary }) {
   const { onOpen, isOpen, onClose } = useDisclosure();
-
+  const { width } = useWindowSize();
   return (
     <Box
       cursor="pointer"
@@ -27,7 +28,12 @@ function Cards({ image, title, description, summary }) {
       marginLeft="2"
       borderRadius="lg"
     >
-      <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        size="xl"
+        {...(width < 768 && 'isCentered')}
+      >
         <ModalOverlay />
         <ModalContent paddingBottom="2rem">
           <ModalHeader textAlign="center" textTransform="uppercase">

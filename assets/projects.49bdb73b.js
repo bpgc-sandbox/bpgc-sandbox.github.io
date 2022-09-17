@@ -1,1 +1,1 @@
-const s="/assets/projects.ad4c4beb.jpg";export{s as b};
+const e=""+new URL("projects.ad4c4beb.jpg",import.meta.url).href;export{e as b};

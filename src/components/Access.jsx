@@ -37,7 +37,7 @@ function Access() {
           >
             <Heading textAlign="center">Sandbox Access</Heading>
             <Text>
-              Get access to all Sandbox facilities for a whole semster!
+              Get access to all Sandbox facilities for a whole semester!
             </Text>
           </Stack>
         </Box>
@@ -59,7 +59,7 @@ function Access() {
               >
                 form
               </Link>{' '}
-              would close soon (deadline TBA). So don't delay and fill out the {' '}
+              would close soon (deadline TBA). So don't delay and fill out the{' '}
               <Link
                 color="blue.600"
                 href="https://forms.gle/PDcNnJSZQPCc1wMr7"
@@ -74,7 +74,7 @@ function Access() {
                 styles={{ color: 'red' }}
                 children={'request proposal'}
               />{' '}
-              to use some of the Sandbox facilities inoder to to see your
+              to use some of the Sandbox facilities in order to to see your
               project to completion. Please read the terms and conditions before
               filling the{' '}
               <Link
@@ -92,14 +92,9 @@ function Access() {
               Terms and Conditions
             </Heading>
             <Text>
-              Before applying, the following points must be kept in mind:
+              Before applying, the following point must be kept in mind:
             </Text>
             <OrderedList padding="1.5rem">
-              <ListItem>
-                <Text>
-                  The size of the team must not be more than 5 people.
-                </Text>
-              </ListItem>
               <ListItem>
                 <Text>
                   This facility is only open to students studying in
@@ -122,7 +117,7 @@ function Access() {
               <ListItem>
                 <Text>
                   If more than one members are applying, mention their name,
-                  thier BITS emai address, their brach and the year of study.
+                  their BITS email address, their branch and the year of study.
                 </Text>
               </ListItem>
               <ListItem>

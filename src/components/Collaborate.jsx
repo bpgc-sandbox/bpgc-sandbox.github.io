@@ -51,9 +51,9 @@ function Collaborate() {
           <Box marginTop="4rem" width="75%">
             <Text color="teal.300" fontSize="3xl">
               The Sandbox is not only a platform for students to ideate, design
-              and innnovate but also a platform which ensures that the
+              and innovate but also a platform which ensures that the
               technological products that different teams develop can be
-              utilised in the industry for real-time applications.
+              utilized in the industry for real-time applications.
             </Text>
             <Text fontSize="xl" marginTop="1rem">
               A purely symbiotic relationship to its core, industry-academia
@@ -69,7 +69,7 @@ function Collaborate() {
                 <Text>
                   New solutions to Old problems - There are many problem
                   statements that need a younger and fresher perspective to be
-                  solved. Corporates can give these problem statements for our
+                  solved. Corporate can give these problem statements for our
                   students to work on. The industry-level facilities available
                   along with academic and industry mentors will lead to students
                   coming up with innovative ideas and products that can be
@@ -83,7 +83,7 @@ function Collaborate() {
                 <Text>
                   Publicity and Larger Reach - The companies that are sponsoring
                   and collaborating with the Sandbox team will be
-                  well-publicised through banners and standees around the
+                  well-publicized through banners and standees around the
                   campus, especially in those places such as the BDome, LT Lawns
                   etc. which are frequented by the students, faculty members,
                   guest speakers, business visitors and more. This would

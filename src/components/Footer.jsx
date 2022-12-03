@@ -79,7 +79,7 @@ function Footer() {
         res = await res.json();
         if (res.error) {
           console.log(res.errors);
-          throw Error('An error occured while sending the message');
+          throw Error('An error ocurred while sending the message');
         }
         setName('');
         setEmail('');

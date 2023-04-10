@@ -11,13 +11,21 @@ import ishan from '../assets/students/ishan.jpg';
 import tanay from '../assets/students/tanay.jpeg';
 import dhruv from '../assets/students/dhruv.jpeg';
 
-// import pravin from '../assets/faculty/pravin.min.png';
-import pravin from '../assets/faculty/pravin.jpeg';
-import indrani from '../assets/faculty/indrani.jpeg';
-import hrishi from '../assets/faculty/hrishi.min.png';
-import eskannan from '../assets/faculty/eskannan.jpeg';
-import rnbehera from '../assets/faculty/rnbehera.min.png';
-import ramprasad from '../assets/faculty/ramprasad.min.png';
+import aryan from '../assets/students/aryan.jpeg';
+import rishikesh from '../assets/students/rishikesh.jpeg';
+import pratham from '../assets/students/pratham.jpeg';
+import aditya from '../assets/students/aditya.jpeg';
+import smrithi from '../assets/students/smrithi.jpeg';
+import ayush from '../assets/students/ayush.jpeg';
+import vishnu from '../assets/students/vishnu.jpeg';
+import aashishkanted from '../assets/students/aashishkanted.jpg'
+import arjunputhli from '../assets/students/arjunputhli.jpg'
+import ritwik from '../assets/students/ritwik.jpg'
+import shlok from '../assets/students/shlok.jpg'
+import arnav from '../assets/students/arnav.jpeg'
+import nitya from '../assets/students/nitya.jpg'
+
+import varinder from '../assets/faculty/varinder1.jpg';
 
 let student = [
   {
@@ -105,39 +113,105 @@ let student = [
     linkedIn: 'https://www.linkedin.com/in/sahil-shingote-43a0531bb/',
     image: sahil,
   },
+  {
+    name: 'Aryan Bhosale',
+    mobile: '+918779596908',
+    email: 'f20210274@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/aryan-bhosale-648323223',
+    image: aryan,
+  },
+  {
+    name: 'Rishikesh Panda',
+    mobile: '+917721815868',
+    email: 'f20211822@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/rishikesh-panda-1b5b3a215',
+    image: rishikesh,
+  },
+  {
+    name: 'Pratham Bhonge',
+    mobile: '+919886989159',
+    email: 'f20212168@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/pratham-bhonge-2a131a232',
+    image: pratham,
+  },
+  {
+    name: 'Aditya Kurande',
+    mobile: '+917722030520',
+    email: 'f20212485@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/yash-yelmame-a68165205/',
+    image: aditya,
+  },
+  {
+    name: 'Smrithi Lokesh',
+    mobile: '+916361694968',
+    email: 'f20212018@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/smrithi-ls-0894b7219',
+    image: smrithi,
+  },
+  {
+    name: 'Ayush Sinha',
+    mobile: '+918107875425',
+    email: 'f20212892@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/ayush-sinha-09854b226',
+    image: ayush,
+  },
+  {
+    name: 'Vishnu Vardhan Reddy Peddireddy',
+    mobile: '+918790830151',
+    email: 'f20211199@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/',
+    image: vishnu,
+  },
+  {
+    name: 'Aashish Kanted',
+    mobile: '+919840530003',
+    email: 'f20211912@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/aashish-kanted-7a3707225',
+    image: aashishkanted,
+  },
+  {
+    name: 'Arjun Puthli',
+    mobile: '+919594333307',
+    email: 'f20212249@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/mwlite/in/arjun-puthli-810938189',
+    image: arjunputhli,
+  },
+  {
+    name: 'Ritwik',
+    mobile: '+919999326476',
+    email: 'f20220470@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/ritwik-sharma-609a38268',
+    image: ritwik,
+  },
+  {
+    name: 'Shlok Dhareshwar',
+    mobile: '+919594351352',
+    email: 'f20220540@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/shlok-dhareshwar-a19b83249',
+    image: shlok,
+  },
+  {
+    name: 'Arnav Ranjekar',
+    mobile: '+919922939076',
+    email: 'f20220421@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/arnav-ranjekar-543139246/',
+    image: arnav,
+  },
+  {
+    name: 'Nitya Ahuja',
+    mobile: '+919606031958',
+    email: 'f20212293@goa.bits-pilani.ac.in',
+    linkedIn: 'https://www.linkedin.com/in/nitya-ahuja-516240237/',
+    image: nitya,
+  },
 ];
 
 let faculty = [
   {
-    image: pravin,
-    name: 'Dr. Pravin Mane',
-    url: 'https://universe.bits-pilani.ac.in/goa/pravinmane/profile',
-  },
-  {
-    image: indrani,
-    name: 'Dr. Indrani Talukdar',
-    url: 'https://universe.bits-pilani.ac.in/goa/indranit/profile',
-  },
-  {
-    image: hrishi,
-    name: 'Dr. Hrishikesh Sonalikar',
-    url: 'https://universe.bits-pilani.ac.in/goa/Hrishikeshs/profile',
-  },
-  {
-    image: rnbehera,
-    name: 'Dr. R N Behera',
-    url: 'https://universe.bits-pilani.ac.in/goa/rbehera/profile',
-  },
-  {
-    image: eskannan,
-    name: 'Dr. E S Kannan',
-    url: 'https://universe.bits-pilani.ac.in/goa/eskannan/profile',
-  },
-  {
-    image: ramprasad,
-    name: 'Dr. Ramprasad S Joshi',
-    url: 'https://www.bits-pilani.ac.in/goa/rsj/profile',
-  },
+    image: varinder,
+    name: 'Dr. Varinder Singh',
+    url: 'https://universe.bits-pilani.ac.in/goa/vsingh/profile',
+  }
 ];
 
 function compare(a, b) {

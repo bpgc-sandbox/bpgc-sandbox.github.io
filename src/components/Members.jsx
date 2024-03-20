@@ -68,13 +68,13 @@ function Members() {
         </Box>
         <Box marginTop="2rem">
           <Heading textAlign="center" color="teal" fontSize="5xl">
-            Faculty Members
+            Faculty In-Charge
           </Heading>
           <Center>
             <SimpleGrid
               marginTop="2rem"
               spacing="40px"
-              columns={{ base: 1, md: 3 }}
+              columns={{ base: 1 }}
             >
               {faculty.map((prof, i) => (
                 <MemberCard

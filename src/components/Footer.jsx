@@ -67,7 +67,7 @@ function Footer() {
         });
       } else {
         let res = await fetch(
-          `https://formspree.io/f/${import.meta.env.VITE_CODE}`,
+          `https://formspree.io/f/xrgnajyg`,
           {
             method: 'POST',
             body: JSON.stringify({ name, email, message }),
@@ -105,7 +105,7 @@ function Footer() {
   }
 
   return (
-    <Box backgroundColor="whitesmoke" marginTop="2rem">
+    <Box backgroundColor="black" marginTop="2rem" color="white">
       <Center>
         {width > 768 && (
           <HStack
@@ -139,7 +139,7 @@ function Footer() {
               </Text>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={e => {
                   navigator.clipboard.writeText('+91 9769037312').then(() =>
                     toast({
@@ -157,7 +157,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={e => {
                   navigator.clipboard
                     .writeText('ic.sandbox@goa.bits-pilani.ac.in')
@@ -177,7 +177,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={() =>
                   window.open('https://www.facebook.com/SandboxBPGC/', '_blank')
                 }
@@ -187,7 +187,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={() =>
                   window.open(
                     'https://www.linkedin.com/company/sandbox-innovation-lab/about/',
@@ -200,7 +200,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={() =>
                   window.open(
                     'https://www.instagram.com/sandbox_bitsg/',
@@ -294,7 +294,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={e => {
                   navigator.clipboard
                     .writeText('ic.sandbox@goa.bits-pilani.ac.in')
@@ -314,7 +314,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={() =>
                   window.open('https://www.facebook.com/SandboxBPGC/', '_blank')
                 }
@@ -324,7 +324,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={() =>
                   window.open(
                     'https://www.linkedin.com/company/sandbox-innovation-lab/about/',
@@ -337,7 +337,7 @@ function Footer() {
               </Button>
               <Button
                 colorScheme="none"
-                color="black"
+                color="white"
                 onClick={() =>
                   window.open(
                     'https://www.instagram.com/sandbox_bitsg/',

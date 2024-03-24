@@ -51,40 +51,18 @@ function Access() {
                 Sandbox only accepts proposals for student projects only before
                 the start of the semester.
               </Highlight>{' '}
-              So the{' '}
+              So the form has closed now for this Semester! But don't worry, even if your project is not a part of
+              Sandbox, you can still submit a {' '}
               <Link
                 color="blue.600"
-                href="https://forms.gle/PDcNnJSZQPCc1wMr7"
+                href="https://docs.google.com/forms/d/1Trk-21kGepHb9bmn-ntyph6d1621ZZ96yXIOcgc315M/viewform?edit_requested=true"
                 target="_blank"
               >
-                form
+                Request Proposal Form
               </Link>{' '}
-              would close soon (deadline TBA). So don't delay and fill out the{' '}
-              <Link
-                color="blue.600"
-                href="https://forms.gle/PDcNnJSZQPCc1wMr7"
-                target="_blank"
-              >
-                form
-              </Link>{' '}
-              soon! And don't worry, even if your project is not a part of
-              Sandbox, you can still submit a{' '}
-              <Highlight
-                query={['request proposal']}
-                styles={{ color: 'red' }}
-                children={'request proposal'}
-              />{' '}
               to use some of the Sandbox facilities in order to to see your
               project to completion. Please read the terms and conditions before
-              filling the{' '}
-              <Link
-                color="blue.600"
-                href="https://forms.gle/PDcNnJSZQPCc1wMr7"
-                target="_blank"
-              >
-                form
-              </Link>
-              .
+              filling the request form.
             </Text>
           </Box>{' '}
           <Box paddingTop="2rem" fontSize="xl">

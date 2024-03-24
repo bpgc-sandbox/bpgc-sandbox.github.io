@@ -25,10 +25,10 @@ function MemberCard({
   }
 
   return (
-    <Box border="1px">
+    <Box border="1px" >
       <Image
         height="18.75rem"
-        width="15rem"
+        width="17rem"
         src={image}
         borderBottomLeftRadius="2px"
         borderBottomRightRadius="2px"

@@ -1,4 +1,5 @@
 import {
+  Link,
   Box,
   Center,
   Image,
@@ -16,7 +17,7 @@ import {
 import React from 'react';
 import { useWindowSize } from 'react-use';
 
-function Cards({ image, title, description, summary }) {
+function Cards({ image, title,link, description, summary }) {
   const { onOpen, isOpen, onClose } = useDisclosure();
   const { width } = useWindowSize();
   return (
@@ -50,6 +51,7 @@ function Cards({ image, title, description, summary }) {
               <Image src={image} height="18rem" width="25rem" maxWidth="100%" />
             </Center>
             <Box marginTop="2rem">
+              <Link>{link}</Link>
               <Text>{summary.brief}</Text>
               <UnorderedList marginTop="1rem">
                 {summary.points.map(point => (

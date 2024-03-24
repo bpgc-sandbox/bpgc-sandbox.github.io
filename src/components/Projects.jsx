@@ -48,11 +48,12 @@ function Projects() {
               <Cards
                 title={project.title}
                 description={project.description}
+                link = {project.link}
                 image={project.image}
                 summary={project.summary}
                 key={i}
               />
-            ))}
+            ))} 
           </SimpleGrid>
         </Center>
       </motion.div>

@@ -25,9 +25,86 @@ import shlok from '../assets/students/shlok.jpg'
 import arnav from '../assets/students/arnav.jpeg'
 import nitya from '../assets/students/nitya.jpg'
 
-import varinder from '../assets/faculty/varinder1.jpg';
+import arya from '../assets/students/arya.jpeg'
+import raghav from '../assets/students/raghav.jpeg'
+import rajdeep from "../assets/students/rajdeep.jpeg"
+import samar from '../assets/students/samar.jpeg'
+import vishnuganti from '../assets/students/vishnuganti.jpeg'
+import adarsh from '../assets/students/adarsh.jpeg'
+import ajinkya from "../assets/students/ajinkya.jpeg"
+import om from "../assets/students/om.jpeg"
+import aniket from "../assets/students/aniket.webp"
+
+import varinder from '../assets/faculty/varinder1.jpeg';
 
 let student = [
+  {
+    name:"Om Jaiswal",
+    email:"f20220483@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/om-jaiswal-b4716a190",
+    image:om
+  },
+  {
+    name:"Aniket Sonawane",
+    email:"f20220031@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/aniket-sonawane-3a87b9249/",
+    image:aniket
+  },
+  {
+    name:"Ajikya Deshpande",
+    email:"f20220746@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/ajinkya-deshpande-6ab13b265",
+    image:ajinkya
+  },
+
+  {
+    name:"Adarsh Pai",
+    email:"f20220698@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/adarsh-pai-063050263",
+    image:adarsh
+  },
+
+  {
+    name:"Arya Kulkarni",
+    email:"f20220557@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/arya-kulkarni-a68b55251",
+    image:arya
+  },
+  {
+    name:"Raghav Mohak Kumar",
+    email:"f20220137@goa.bits-pilani.ac.in",
+    linkedIn:"http://www.linkedin.com/in/raghav-mohan-kumar-427557246",
+    image:raghav
+  },
+  {
+    name:"Rajdeep Naha",
+    email:"f20221218@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/rajdeep-naha-a6a032257",
+    image:rajdeep
+  },
+  {
+    name:"Vimarsh Shah",
+    email:"f20221060@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/vimarshshah"
+  },
+  {
+    name:"Pranav Saxena",
+    email:"f20220257@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/pranav-saxena13"
+  },
+  {
+    name:"Samar Jalil Siddiqui",
+    email:"f20221135@goa.bita-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/samar-jalil-siddiqui-96b852299/",
+    image:samar
+  },
+  {
+    name:"Vishnu Ganti",
+    email:"f20220579@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/vishnu-ganti-223898258",
+    image:vishnuganti
+  },
+  
   {
     name: 'Ananth Raghav',
     mobile: '+918790176414',
@@ -210,7 +287,7 @@ let faculty = [
   {
     image: varinder,
     name: 'Dr. Varinder Singh',
-    url: 'https://universe.bits-pilani.ac.in/goa/vsingh/profile',
+    url: 'https://www.bits-pilani.ac.in/goa/varinder-singh/',
   }
 ];
 

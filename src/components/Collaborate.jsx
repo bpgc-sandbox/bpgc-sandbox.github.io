@@ -126,7 +126,7 @@ function Collaborate() {
                     <AccordionButton height={width > 600 ? '4rem' : 'auto'}>
                       <Box flex="1" textAlign="left">
                         <Text color="gold" fontSize="xl">
-                          {faq.question}
+                          {faq.question}  
                         </Text>
                       </Box>
                       <AccordionIcon />

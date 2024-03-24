@@ -2,6 +2,8 @@ import spiderbot from '../assets/projects/spiderbot.jpg';
 import strikebot from '../assets/projects/strikebot.jpeg';
 import trotbot from '../assets/projects/trotbot.jpeg';
 import kratos from '../assets/projects/kratosrover.jpeg';
+import roboticarm from "../assets/projects/roboticarm.jpeg"
+import cansat from "../assets/projects/cansat.png"
 
 let homeProjects = [
   {
@@ -26,7 +28,7 @@ let homeProjects = [
     image: trotbot,
     summary: {
       brief:
-        'Trotbot is a ground robot capable of moving independently along X and Y directions, which give it added freedom to navigate indoor constrained environments',
+        'Trotbot is a ground robot capable of moving independently along X and Y directions, which give it added freedom to navigate indoor constrained environments \n ',
       points: [
         "The robot will be able to autonomously navigate around obstacles and reach waypoints set in and around the environment with the use of onboard sensors and be able to detect it's location.",
         'The current onboard sensors include a RGB and depth camera, 2D-lidar and motor encoders',
@@ -39,6 +41,7 @@ let homeProjects = [
     description:
       'Project Kratos is a student team that designs and manufactures autonomous, all-terrain Martian rover with a robotic arm and an onboard laboratory for detecting life.',
     image: kratos,
+    link:"https://kratos-the-rover.github.io/",
     summary: {
       brief:
         'The rover is capable of autonomously traversing uneven terrain as experienced in Mars, use its robotic arm to manipulate switches, turn knobs and identify signs of life in rock and soil samples.',
@@ -69,6 +72,40 @@ let projects = [
       ],
     },
   },
+  {
+    title:"Rocketary",
+    description:"Project Rocketry is working on building a self-landing model rocket propelled by a hybrid engine.",
+    summary:{
+      brief:"",
+      points:[
+        "Using Thrust Vector Controlling, the rocket will be able to correct it's path to the specified trajectory during external disturbances and land itself in upright position using retropropulsion.",
+        "Studying and designing hybrid engines using accessible materials such as ABS along with the design of Structure and Avionics is the aim of the project.",
+        "The main goal is to scale the technology for Industrial use (such as metrology) and to provide significant contributions to the ongoing research in the field of rocketry."
+      ]
+    }
+  },
+  {
+    title:"Robotic Arm",
+    image:roboticarm,
+    description:"Robotic Arm aims at making an autonomous arm capable of complex manipulations in addition to basic pick-place operations",
+    summary:{
+      brief:"",
+      points:[]
+    }
+  },
+  {
+    title:"CanSat",
+    image:cansat,
+    description:"Team Rayquaza is participating in ASI's design-build-launch CANSAT competition, where each team has to build a functioning CANSAT adhering to the competition requirements.",
+    summary:{
+      brief:"",
+      points:[
+        "Completed assembly of the entire cansat, including a working gyroscope, attached parachutes and parachute deployment mechanism.",
+        "Established communication between the cansat and the ground station from a range of 600 meters, the maximum viable testing range available on campus.",
+        "Designed PCB to host the electronic devices on board the cansat.",
+      ]
+    }
+  }
 ];
 
 function compare(a, b) {

@@ -1,51 +1,14 @@
-import React, { Suspense, lazy } from 'react';
-import { ChakraProvider, extendTheme, Spinner } from '@chakra-ui/react';
-import Navbar from './components/Navbar';
-const Home = lazy(() => import('./components/Home'));
-const Projects = lazy(() => import('./components/Projects'));
-const Members = lazy(() => import('./components/Members'));
-const Collaborate = lazy(() => import('./components/Collaborate'));
-const Access = lazy(() => import('./components/Access'));
-const Faq = lazy(() => import('./components/Faq'));
-// import Projects from './components/Projects';
-// import Members from './components/Members';
-// import Collaborate from './components/Collaborate';
-// import Access from './components/Access';
-// import Faq from './components/Faq';
+import React from "react";
+import Navbar from "./components/NavbarNew";
+import Home from "./components/HomeNew";
+import "./index.css"
 
-function App() {
-  const theme = extendTheme({
-    colors: {
-      gold: '#efba6c',
-    },
-  });
-  return (
-    <ChakraProvider theme={theme}>
-      <Suspense
-        fallback={
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '80vh',
-            }}
-          >
-            <Spinner size="xl" />
-          </div>
-        }
-      >
-        <Navbar>
-          <Home />
-          <Projects />
-          <Members />
-          <Collaborate />
-          <Access />
-          <Faq />
-        </Navbar>
-      </Suspense>
-    </ChakraProvider>
-  );
+function App(){
+    return(
+    <div className="App">
+        <Navbar />
+        <Home />
+    </div>)
 }
 
-export default App;
+export default App

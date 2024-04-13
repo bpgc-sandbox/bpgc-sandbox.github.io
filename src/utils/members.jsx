@@ -29,7 +29,7 @@ import arya from '../assets/students/arya.jpeg'
 import raghav from '../assets/students/raghav.jpeg'
 import rajdeep from "../assets/students/rajdeep.jpeg"
 import samar from '../assets/students/samar.jpeg'
-import vishnuganti from '../assets/students/vishnuganti.jpeg'
+import vishnuganti from '../assets/students/vishnuganti1.jpeg'
 import adarsh from '../assets/students/adarsh.jpeg'
 import ajinkya from "../assets/students/ajinkya.jpeg"
 import om from "../assets/students/om.jpeg"

@@ -25,15 +25,16 @@ function MemberCard({
   }
 
   return (
-    <Box border="1px" >
+    <Box border="1px"  borderRadius="5%">
       <Image
         height="18.75rem"
         width="17rem"
         src={image}
+        borderTopRadius="15px"
         borderBottomLeftRadius="2px"
         borderBottomRightRadius="2px"
       />
-      <Box background="whitesmoke" paddingTop="1">
+      <Box background="whitesmoke" paddingTop="1" borderBottomRadius="17%">
         <Text textAlign="center" color={coordi ? 'gold' : ''}>
           {name}
         </Text>

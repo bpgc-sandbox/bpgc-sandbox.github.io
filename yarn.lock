@@ -10,6 +10,7 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
+<<<<<<< HEAD
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.23.5", "@babel/code-frame@^7.24.1":
   version "7.24.1"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.24.1.tgz"
@@ -35,6 +36,33 @@
     "@babel/helper-module-transforms" "^7.23.3"
     "@babel/helpers" "^7.24.1"
     "@babel/parser" "^7.24.1"
+=======
+"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.23.5", "@babel/code-frame@^7.24.1", "@babel/code-frame@^7.24.2":
+  version "7.24.2"
+  resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.24.2.tgz"
+  integrity sha512-y5+tLQyV8pg3fsiln67BVLD1P13Eg4lh5RW9mF0zUuvLrv9uIQ4MCL+CRT+FTsBlBjcIan6PGsLcBN0m3ClUyQ==
+  dependencies:
+    "@babel/highlight" "^7.24.2"
+    picocolors "^1.0.0"
+
+"@babel/compat-data@^7.23.5":
+  version "7.24.4"
+  resolved "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.24.4.tgz"
+  integrity sha512-vg8Gih2MLK+kOkHJp4gBEIkyaIi00jgWot2D9QOmmfLC8jINSOzmCLta6Bvz/JSBCqnegV0L80jhxkol5GWNfQ==
+
+"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.18.6":
+  version "7.24.4"
+  resolved "https://registry.npmjs.org/@babel/core/-/core-7.24.4.tgz"
+  integrity sha512-MBVlMXP+kkl5394RBLSxxk/iLTeVGuXTV3cIDXavPpMMqnSnt6apKgan/U8O3USWZCWZT/TbgfEpKa4uMgN4Dg==
+  dependencies:
+    "@ampproject/remapping" "^2.2.0"
+    "@babel/code-frame" "^7.24.2"
+    "@babel/generator" "^7.24.4"
+    "@babel/helper-compilation-targets" "^7.23.6"
+    "@babel/helper-module-transforms" "^7.23.3"
+    "@babel/helpers" "^7.24.4"
+    "@babel/parser" "^7.24.4"
+>>>>>>> c323717 (first)
     "@babel/template" "^7.24.0"
     "@babel/traverse" "^7.24.1"
     "@babel/types" "^7.24.0"
@@ -44,10 +72,17 @@
     json5 "^2.2.3"
     semver "^6.3.1"
 
+<<<<<<< HEAD
 "@babel/generator@^7.24.1":
   version "7.24.1"
   resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.24.1.tgz"
   integrity sha512-DfCRfZsBcrPEHUfuBMgbJ1Ut01Y/itOs+hY2nFLgqsqXd52/iSiVq5TITtUasIUgm+IIKdY2/1I7auiQOEeC9A==
+=======
+"@babel/generator@^7.24.1", "@babel/generator@^7.24.4":
+  version "7.24.4"
+  resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.24.4.tgz"
+  integrity sha512-Xd6+v6SnjWVx/nus+y0l1sxMOTOMBkyL4+BIdbALyatQnAe/SRVjANeDPSCYaX+i1iJmuGSKf3Z+E+V/va1Hvw==
+>>>>>>> c323717 (first)
   dependencies:
     "@babel/types" "^7.24.0"
     "@jridgewell/gen-mapping" "^0.3.5"
@@ -93,9 +128,15 @@
     "@babel/types" "^7.22.5"
 
 "@babel/helper-module-imports@^7.16.7", "@babel/helper-module-imports@^7.18.6", "@babel/helper-module-imports@^7.22.15":
+<<<<<<< HEAD
   version "7.24.1"
   resolved "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.24.1.tgz"
   integrity sha512-HfEWzysMyOa7xI5uQHc/OcZf67/jc+xe/RZlznWQHhbb8Pg1SkRdbK4yEi61aY8wxQA7PkSfoojtLQP/Kpe3og==
+=======
+  version "7.24.3"
+  resolved "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.24.3.tgz"
+  integrity sha512-viKb0F9f2s0BCS22QSF308z/+1YWKV/76mwt61NBzS5izMzDPwdq1pTrzf+Li3npBWX9KdQbkeCt1jSAM7lZqg==
+>>>>>>> c323717 (first)
   dependencies:
     "@babel/types" "^7.24.0"
 
@@ -144,29 +185,50 @@
   resolved "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.23.5.tgz"
   integrity sha512-85ttAOMLsr53VgXkTbkx8oA6YTfT4q7/HzXSLEYmjcSTJPMPQtvq1BD79Byep5xMUYbGRzEpDsjUf3dyp54IKw==
 
+<<<<<<< HEAD
 "@babel/helpers@^7.24.1":
   version "7.24.1"
   resolved "https://registry.npmjs.org/@babel/helpers/-/helpers-7.24.1.tgz"
   integrity sha512-BpU09QqEe6ZCHuIHFphEFgvNSrubve1FtyMton26ekZ85gRGi6LrTF7zArARp2YvyFxloeiRmtSCq5sjh1WqIg==
+=======
+"@babel/helpers@^7.24.4":
+  version "7.24.4"
+  resolved "https://registry.npmjs.org/@babel/helpers/-/helpers-7.24.4.tgz"
+  integrity sha512-FewdlZbSiwaVGlgT1DPANDuCHaDMiOo+D/IDYRFYjHOuv66xMSJ7fQwwODwRNAPkADIO/z1EoF/l2BCWlWABDw==
+>>>>>>> c323717 (first)
   dependencies:
     "@babel/template" "^7.24.0"
     "@babel/traverse" "^7.24.1"
     "@babel/types" "^7.24.0"
 
+<<<<<<< HEAD
 "@babel/highlight@^7.24.1":
   version "7.24.1"
   resolved "https://registry.npmjs.org/@babel/highlight/-/highlight-7.24.1.tgz"
   integrity sha512-EPmDPxidWe/Ex+HTFINpvXdPHRmgSF3T8hGvzondYjmgzTQ/0EbLpSxyt+w3zzlYSk9cNBQNF9k0dT5Z2NiBjw==
+=======
+"@babel/highlight@^7.24.2":
+  version "7.24.2"
+  resolved "https://registry.npmjs.org/@babel/highlight/-/highlight-7.24.2.tgz"
+  integrity sha512-Yac1ao4flkTxTteCDZLEvdxg2fZfz1v8M4QpaGypq/WPDqg3ijHYbDfs+LG5hvzSoqaSZ9/Z9lKSP3CjZjv+pA==
+>>>>>>> c323717 (first)
   dependencies:
     "@babel/helper-validator-identifier" "^7.22.20"
     chalk "^2.4.2"
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
 
+<<<<<<< HEAD
 "@babel/parser@^7.24.0", "@babel/parser@^7.24.1":
   version "7.24.1"
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.24.1.tgz"
   integrity sha512-Zo9c7N3xdOIQrNip7Lc9wvRPzlRtovHVE4lkz8WEDr7uYh/GMQhSiIgFxGIArRHYdJE5kxtZjAf8rT0xhdLCzg==
+=======
+"@babel/parser@^7.24.0", "@babel/parser@^7.24.1", "@babel/parser@^7.24.4":
+  version "7.24.4"
+  resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.24.4.tgz"
+  integrity sha512-zTvEBcghmeBma9QIGunWevvBAp4/Qu9Bdq+2k0Ot4fVMD6v3dsC9WOcRSKk7tRRyBM/53yKMJko9xOatGQAwSg==
+>>>>>>> c323717 (first)
 
 "@babel/plugin-syntax-jsx@^7.17.12", "@babel/plugin-syntax-jsx@^7.18.6":
   version "7.18.6"
@@ -1066,14 +1128,24 @@
     pretty-format "^27.0.2"
 
 "@testing-library/dom@>=7.21.4":
+<<<<<<< HEAD
   version "9.3.4"
   resolved "https://registry.npmjs.org/@testing-library/dom/-/dom-9.3.4.tgz"
   integrity sha512-FlS4ZWlp97iiNWig0Muq8p+3rVDjRiYE+YKGbAqXOu9nwJFFOdL00kFpz42M+4huzYi86vAK1sOOfyOG45muIQ==
+=======
+  version "10.0.0"
+  resolved "https://registry.npmjs.org/@testing-library/dom/-/dom-10.0.0.tgz"
+  integrity sha512-PmJPnogldqoVFf+EwbHvbBJ98MmqASV8kLrBYgsDNxQcFMeIS7JFL48sfyXvuMtgmWO/wMhh25odr+8VhDmn4g==
+>>>>>>> c323717 (first)
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
     "@types/aria-query" "^5.0.1"
+<<<<<<< HEAD
     aria-query "5.1.3"
+=======
+    aria-query "5.3.0"
+>>>>>>> c323717 (first)
     chalk "^4.1.0"
     dom-accessibility-api "^0.5.9"
     lz-string "^1.5.0"
@@ -1240,6 +1312,7 @@ aria-hidden@^1.1.1:
   dependencies:
     tslib "^1.0.0"
 
+<<<<<<< HEAD
 aria-query@^5.0.0, aria-query@5.1.3:
   version "5.1.3"
   resolved "https://registry.npmjs.org/aria-query/-/aria-query-5.1.3.tgz"
@@ -1254,6 +1327,14 @@ array-buffer-byte-length@^1.0.0:
   dependencies:
     call-bind "^1.0.5"
     is-array-buffer "^3.0.4"
+=======
+aria-query@^5.0.0, aria-query@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.npmjs.org/aria-query/-/aria-query-5.3.0.tgz"
+  integrity sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A==
+  dependencies:
+    dequal "^2.0.3"
+>>>>>>> c323717 (first)
 
 atob@^2.1.2:
   version "2.1.2"
@@ -1285,6 +1366,7 @@ browserslist@^4.22.2, "browserslist@>= 4.21.0":
     electron-to-chromium "^1.4.668"
     node-releases "^2.0.14"
     update-browserslist-db "^1.0.13"
+<<<<<<< HEAD
 
 call-bind@^1.0.2, call-bind@^1.0.5, call-bind@^1.0.6, call-bind@^1.0.7:
   version "1.0.7"
@@ -1296,6 +1378,8 @@ call-bind@^1.0.2, call-bind@^1.0.5, call-bind@^1.0.6, call-bind@^1.0.7:
     function-bind "^1.1.2"
     get-intrinsic "^1.2.4"
     set-function-length "^1.2.1"
+=======
+>>>>>>> c323717 (first)
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -1303,9 +1387,15 @@ callsites@^3.0.0:
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
 caniuse-lite@^1.0.30001587:
+<<<<<<< HEAD
   version "1.0.30001599"
   resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001599.tgz"
   integrity sha512-LRAQHZ4yT1+f9LemSMeqdMpMxZcc4RMWdj4tiFe3G8tNkWK+E58g+/tzotb5cU6TbcVJLr4fySiAW7XmxQvZQA==
+=======
+  version "1.0.30001610"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001610.tgz"
+  integrity sha512-QFutAY4NgaelojVMjY63o6XlZyORPaLfyMnsl3HgnWdJUcX6K0oaJymHjH8PT5Gk7sTm8rvC/c5COUQKXqmOMA==
+>>>>>>> c323717 (first)
 
 chalk@^2.4.2:
   version "2.4.2"
@@ -1453,6 +1543,7 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.0.tgz"
   integrity sha512-hjf+xovcEn31w/EUYdTXQh/8smFL/dzYjohQGEIgjyNavaJfBY2p5F527Bo1VPATxv0VYTUC2bOcXvqFwk78Og==
 
+<<<<<<< HEAD
 deep-equal@^2.0.5:
   version "2.2.3"
   resolved "https://registry.npmjs.org/deep-equal/-/deep-equal-2.2.3.tgz"
@@ -1494,6 +1585,12 @@ define-properties@^1.2.1:
     define-data-property "^1.0.1"
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
+=======
+dequal@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz"
+  integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
+>>>>>>> c323717 (first)
 
 detect-node-es@^1.1.0:
   version "1.1.0"
@@ -1511,9 +1608,15 @@ dom-accessibility-api@^0.5.6, dom-accessibility-api@^0.5.9:
   integrity sha512-NMt+m9zFMPZe0JcY9gN224Qvk6qLIdqex29clBvc/y75ZBX9YA9wNK3frsYvu2DI1xcCIwxwnX+TlsJ2DSOADg==
 
 electron-to-chromium@^1.4.668:
+<<<<<<< HEAD
   version "1.4.710"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.710.tgz"
   integrity sha512-w+9yAVHoHhysCa+gln7AzbO9CdjFcL/wN/5dd+XW/Msl2d/4+WisEaCF1nty0xbAKaxdaJfgLB2296U7zZB7BA==
+=======
+  version "1.4.738"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.738.tgz"
+  integrity sha512-lwKft2CLFztD+vEIpesrOtCrko/TFnEJlHFdRhazU7Y/jx5qc4cqsocfVrBg4So4gGe9lvxnbLIoev47WMpg+A==
+>>>>>>> c323717 (first)
 
 error-ex@^1.3.1:
   version "1.3.2"
@@ -1529,6 +1632,7 @@ error-stack-parser@^2.0.6:
   dependencies:
     stackframe "^1.3.4"
 
+<<<<<<< HEAD
 es-define-property@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.0.tgz"
@@ -1556,6 +1660,8 @@ es-get-iterator@^1.1.3:
     isarray "^2.0.5"
     stop-iteration-iterator "^1.0.0"
 
+=======
+>>>>>>> c323717 (first)
 esbuild-linux-64@0.14.54:
   version "0.14.54"
   resolved "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.14.54.tgz"
@@ -1637,6 +1743,7 @@ focus-lock@^0.11.2:
   dependencies:
     tslib "^2.0.3"
 
+<<<<<<< HEAD
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz"
@@ -1644,6 +1751,8 @@ for-each@^0.3.3:
   dependencies:
     is-callable "^1.1.3"
 
+=======
+>>>>>>> c323717 (first)
 framer-motion@^6.2.9, framer-motion@>=4.0.0:
   version "6.5.1"
   resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-6.5.1.tgz"
@@ -1672,6 +1781,7 @@ framesync@6.0.1:
   dependencies:
     tslib "^2.1.0"
 
+<<<<<<< HEAD
 function-bind@^1.1.1, function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
@@ -1681,6 +1791,12 @@ functions-have-names@^1.2.3:
   version "1.2.3"
   resolved "https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
+=======
+function-bind@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
+  integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
+>>>>>>> c323717 (first)
 
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
@@ -2413,6 +2529,7 @@ semver@^6.3.1:
   version "6.3.1"
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
+<<<<<<< HEAD
 
 set-function-length@^1.2.1:
   version "1.2.2"
@@ -2435,6 +2552,8 @@ set-function-name@^2.0.1:
     es-errors "^1.3.0"
     functions-have-names "^1.2.3"
     has-property-descriptors "^1.0.2"
+=======
+>>>>>>> c323717 (first)
 
 set-harmonic-interval@^1.0.1:
   version "1.0.1"
@@ -2667,6 +2786,7 @@ whatwg-url@^5.0.0:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
 
+<<<<<<< HEAD
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz"
@@ -2699,6 +2819,8 @@ which-typed-array@^1.1.13:
     gopd "^1.0.1"
     has-tostringtag "^1.0.2"
 
+=======
+>>>>>>> c323717 (first)
 yallist@^3.0.2:
   version "3.1.1"
   resolved "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz"

@@ -1,3 +1,5 @@
+import vimarsh from "../assets/students/vimarsh.jpg"
+import pranav from "../assets/students/pranav.jpg"
 import ananth from '../assets/students/ananth.jpg';
 import yash from '../assets/students/yash.jpeg';
 import sakshi from '../assets/students/sakshi.jpeg';
@@ -25,6 +27,17 @@ import shlok from '../assets/students/shlok.jpg'
 import arnav from '../assets/students/arnav.jpeg'
 import nitya from '../assets/students/nitya.jpg'
 
+import arya from '../assets/students/arya.jpeg'
+import raghav from '../assets/students/raghav.jpeg'
+import rajdeep from "../assets/students/rajdeep.jpeg"
+import samar from '../assets/students/samar.jpeg'
+import vishnuganti from '../assets/students/vishnuganti1.jpeg'
+import adarsh from '../assets/students/adarsh.jpeg'
+import ajinkya from "../assets/students/ajinkya.jpeg"
+import om from "../assets/students/om.jpeg"
+import aniket from "../assets/students/aniket.webp"
+
+import varinder from '../assets/faculty/varinder1.jpeg';
 import arya from '../assets/students/arya.jpeg'
 import raghav from '../assets/students/raghav.jpeg'
 import rajdeep from "../assets/students/rajdeep.jpeg"
@@ -85,12 +98,14 @@ let student = [
   {
     name:"Vimarsh Shah",
     email:"f20221060@goa.bits-pilani.ac.in",
-    linkedIn:"https://www.linkedin.com/in/vimarshshah"
+    linkedIn:"https://www.linkedin.com/in/vimarshshah",
+    image:vimarsh
   },
   {
     name:"Pranav Saxena",
     email:"f20220257@goa.bits-pilani.ac.in",
-    linkedIn:"https://www.linkedin.com/in/pranav-saxena13"
+    linkedIn:"https://www.linkedin.com/in/pranav-saxena13",
+    image:pranav
   },
   {
     name:"Samar Jalil Siddiqui",
@@ -287,6 +302,7 @@ let faculty = [
   {
     image: varinder,
     name: 'Dr. Varinder Singh',
+    url: 'https://www.bits-pilani.ac.in/goa/varinder-singh/',
     url: 'https://www.bits-pilani.ac.in/goa/varinder-singh/',
   }
 ];

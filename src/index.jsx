@@ -1,7 +1,7 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import App from './App1';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const container = document.getElementById('root');

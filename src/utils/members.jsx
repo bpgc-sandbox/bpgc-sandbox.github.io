@@ -35,17 +35,8 @@ import vishnuganti from '../assets/students/vishnuganti1.jpeg'
 import adarsh from '../assets/students/adarsh.jpeg'
 import ajinkya from "../assets/students/ajinkya.jpeg"
 import om from "../assets/students/om.jpeg"
-import aniket from "../assets/students/aniket.webp"
 
-import varinder from '../assets/faculty/varinder1.jpeg';
-import arya from '../assets/students/arya.jpeg'
-import raghav from '../assets/students/raghav.jpeg'
-import rajdeep from "../assets/students/rajdeep.jpeg"
-import samar from '../assets/students/samar.jpeg'
-import vishnuganti from '../assets/students/vishnuganti1.jpeg'
-import adarsh from '../assets/students/adarsh.jpeg'
-import ajinkya from "../assets/students/ajinkya.jpeg"
-import om from "../assets/students/om.jpeg"
+
 import aniket from "../assets/students/aniket.webp"
 
 import varinder from '../assets/faculty/varinder1.jpeg';
@@ -302,7 +293,6 @@ let faculty = [
   {
     image: varinder,
     name: 'Dr. Varinder Singh',
-    url: 'https://www.bits-pilani.ac.in/goa/varinder-singh/',
     url: 'https://www.bits-pilani.ac.in/goa/varinder-singh/',
   }
 ];

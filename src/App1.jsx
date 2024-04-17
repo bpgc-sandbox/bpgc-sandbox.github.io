@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { ChakraProvider, extendTheme, Spinner } from '@chakra-ui/react';
-import Navbar from './components/NavbarNew';
-const Home = lazy(() => import('./components/HomeNew'));
+import Navbar from './components/Navbar';
+const Home = lazy(() => import('./components/Home'));
 const Projects = lazy(() => import('./components/Projects'));
 const Members = lazy(() => import('./components/Members'));
 const Collaborate = lazy(() => import('./components/Collaborate'));

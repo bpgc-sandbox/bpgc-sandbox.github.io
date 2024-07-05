@@ -4,6 +4,7 @@ import trotbot from '../assets/projects/trotbot.jpeg';
 import kratos from '../assets/projects/kratosrover.jpeg';
 import roboticarm from "../assets/projects/roboticarm.jpeg"
 import cansat from "../assets/projects/cansat.png"
+import rocketry from "../assets/projects/rocketary.jpeg"
 
 let homeProjects = [
   {
@@ -73,7 +74,8 @@ let projects = [
     },
   },
   {
-    title:"Rocketary",
+    title:"Rocketry",
+    image: rocketry,
     description:"Project Rocketry is working on building a self-landing model rocket propelled by a hybrid engine.",
     summary:{
       brief:"",

@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "vite --port 3000",
-    "build": "vite build --outDir build",
+    "build": "vite build --outDir dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

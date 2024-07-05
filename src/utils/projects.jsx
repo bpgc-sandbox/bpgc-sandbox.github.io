@@ -4,7 +4,7 @@ import trotbot from '../assets/projects/trotbot.jpeg';
 import kratos from '../assets/projects/kratosrover.jpeg';
 import roboticarm from "../assets/projects/roboticarm.jpeg"
 import cansat from "../assets/projects/cansat.png"
-import rocketry from "../assets/projects/rocketary.png"
+import rocketry from "../assets/projects/rocketary.jpeg"
 
 let homeProjects = [
   {

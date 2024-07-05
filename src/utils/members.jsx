@@ -51,7 +51,7 @@ let student = [
   {
     name:"Parth Shah",
     email:"f20221168@goa.bits-pilani.ac.in",
-    linkedin:"https://www.linkedin.com/in/parth-shah-b014771b0",
+    linkedIn:"https://www.linkedin.com/in/parth-shah-b014771b0",
     image:parth
   },
   {

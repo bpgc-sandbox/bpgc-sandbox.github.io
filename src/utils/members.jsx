@@ -35,7 +35,7 @@ import vishnuganti from '../assets/students/vishnuganti1.jpeg'
 import adarsh from '../assets/students/adarsh.jpeg'
 import ajinkya from "../assets/students/ajinkya.jpeg"
 import om from "../assets/students/om.jpeg"
-
+import parth from "../assets/students/parth.jpg"
 
 import aniket from "../assets/students/aniket.webp"
 
@@ -47,6 +47,12 @@ let student = [
     email:"f20220483@goa.bits-pilani.ac.in",
     linkedIn:"https://www.linkedin.com/in/om-jaiswal-b4716a190",
     image:om
+  },
+  {
+    name:"Parth Shah",
+    email:"f20221168@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/parth-shah-b014771b0",
+    image:parth
   },
   {
     name:"Aniket Sonawane",

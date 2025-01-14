@@ -1,209 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: "Poppins";
-text-decoration: none;
+  scroll-behavior: smooth;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* for Safari on iOS */
+  outline: none; /* for Chrome and other browsers */
 }
 
-/* NavBar */
-.Navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: fit-content;
-   
-    background-color: #262626;    
+/* Removes outline for focus state on all elements */
+*:focus {
+  outline: none;
+}
+body {
+  background-image: url("./Assets/aboutBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#sandbox-logo {
+  z-index: 99;
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  width: 60px;
+  height: 65px;
 }
 
-
-.logo{
-    display: flex;
-    align-items: center;
-
-    font-family: "Bebas Neue";
-    font-size: 18px;
-    font-weight: bolder;
-    
-    color: whitesmoke;
+@media only screen and (max-width: 970px) {
+  #sandbox-logo {
+    width: 45px;
+    height: 50px;
+  }
 }
 
-
-.Navbar .nav-links{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    margin-right: 40px ;
+body {
+  background-color: black;
 }
 
-.Navbar .nav-links li{
-    margin: 0 20px;
-
-    list-style: none;
-
-    font-size: 14px;
-    font-weight: 500 ;
-    
-    transition: all 0.5s;
-}
-.Navbar .nav-links li a{
-    text-decoration: none;
-    color: gold;
+body::-webkit-scrollbar {
+  width: 0px;
 }
 
-.Navbar img{
-    height: 4rem;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.Navbar .nav-links li:hover{
-    color: goldenrod;
-    font-size: 16px;
+.divider {
+  height: 7px;
+  background-color: gold;
+  border: none;
 }
 
-/* Home Page */
-
-.hero-section{
-    display: flex;
-    background-image: url("./assets/bulb.jpg");
-    justify-content: center;
-    align-items: center;
-    
-    height: 80vh;
-    width: 100%;
-    margin: auto auto;
-    
-    background-size:cover;
-
+.section-header {
+  font-size: 50px;
 }
 
-.hero-section .hero-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-    width: 50%;
-    height: 50%;
-    padding: 20px 80px;
-    margin: auto;
-
-    border-radius: 15px;
-    border: 2px solid whitesmoke;
-    
-    color:whitesmoke;
-    background-color: #262626cd;
-}
-
-p{
-    font-size: 20px;
-}
-
-.hero-section .hero-text .vid{
-    display: flex;
-    align-items: center;
-}
-
-/* About Section */
-.about-section{
-    padding: 10px 50px;
-}
-
-.about-section .about-content{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-}
-.about-section .about-text{
-    display: flex;
-    flex-direction: column;
-}
-
-.about-section .about-text h1{
-    font-size: 70px;
-}
-
-.about-section img{
-    height: 20rem;
-}
-
-/* Projects Section */
-
-.projects-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0     ;
-}
-.projects-section h1{
-    font-size: 70px;
-}
-
-/* Footer Section */
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-}
-
-footer .social{
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    width: 30%;
-    color: white;
-}
-
-footer h1{
-    font-size: 40px;
-}
-
-.social .social-links{
-    display: flex;
-    justify-content: start;
-    margin: 20px 0;
-    width: 100%;
-}
-
-footer .social .social-logo{
-    width: 27px;
-    background-size: cover;
-    margin: 0 20px;
-    transition: 0.4s all;
-}
-
-.social>img{
-    width: 10rem   ;
-}
-
-#linkedin{
-    background-image: url("./assets/linkedin.svg");
-    height: 30px;
-
-}
-#facebook{
-    background-image: url("./assets/facebook.svg");
-    height: 27px;
-
-}
-#instagram{
-    background-image: url("./assets/instagram.svg");
-    height: 30px;
-
-}
-
-#facebook:hover{
-    background-image: url("./assets/facebook_hover.svg");
-}
-
-.social .logo img{
-    width: 4rem;
-    margin: 20px;
-}
-.social .logo{
-    font-size: 30px;
+.footer-divider {
+  background-color: rgb(84, 84, 84);
+  border: none;
+  height: 5px;
 }

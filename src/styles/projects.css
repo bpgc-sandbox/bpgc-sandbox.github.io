@@ -1,0 +1,80 @@
+.project-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 10px;
+  background: rgb(31, 31, 31);
+  color: white;
+  text-align: center;
+}
+
+.project-section h1 {
+  font-weight: 550;
+}
+
+.project-section header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.project-section .slider-arrows {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.project-section .arrow-icon {
+  font-size: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.project-section .arrow-icon:hover {
+  border-color: gold;
+  scale: 1.1;
+}
+.card-ticker {
+  height: max-content;
+  padding: 20px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.card-ticker::-webkit-scrollbar {
+  height: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.card-ticker::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+.card-ticker:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(65, 65, 65);
+}
+
+.ticker {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .project-section h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .project-section h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .project-section h1 {
+    font-size: 25px;
+  }
+}

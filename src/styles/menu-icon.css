@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.menu-icon {
+  position: fixed;
+  top: 32px;
+  right: 45px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 999;
+  border: 2px solid gold;
+  border-radius: 50%;
+  padding: 5px;
+  align-content: center;
+  -webkit-user-select: none; /* Chrome, Safari, and other WebKit browsers */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by most browsers */
+}
+
+.menu-icon:focus,
+.menu-icon:active {
+  outline: none;
+}
+
+.menu-icon-closed .line {
+  width: 25px;
+  height: 3px;
+  background-color: gold;
+  border-radius: 5px;
+  transition: all 0.5s;
+  margin: 5px auto;
+  /* transition: background-color 0.5s ; */
+}
+
+.menu-icon-open .line {
+  margin: -2px auto;
+  width: 25px;
+  height: 3px;
+  background-color: gold;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.menu-icon-open .line1 {
+  transform: rotate(-45deg);
+}
+
+.menu-icon-open .line2 {
+  transform: rotate(45deg);
+}
+
+.menu-icon-closed:hover .line {
+  width: 14px;
+}
+
+.menu-icon-closed:hover .line1 {
+  transform: rotate(-45deg);
+}
+
+.menu-icon-closed:hover .line2 {
+  transform: rotate(+45deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-icon .line {
+    width: 21px;
+    height: 2px;
+  }
+
+  .menu-icon-open .line {
+    margin: -2px auto;
+  }
+
+  .menu-icon-closed:hover .line {
+    width: 12px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .menu-icon {
+    width: 22px;
+    height: 22px;
+    right: 6%;
+    top: 6%;
+  }
+  .menu-icon .line {
+    width: 16px;
+    height: 1.5px;
+  }
+
+  .menu-icon-open .line {
+    margin: -1px auto;
+  }
+  .menu-icon-closed:hover .line {
+    width: 11px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    right: 6%;
+    top: 6%;
+  }
+  .menu-icon .line {
+    width: 14px;
+    height: 1.3px;
+  }
+
+  .menu-icon-open .line {
+    margin: -1px auto;
+  }
+  .menu-icon-closed:hover .line {
+    width: 10px;
+  }
+}

@@ -1,0 +1,162 @@
+.faq-page .header-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.879)
+  );
+  height: 100%;
+  width: 100%;
+  gap: 40px;
+  padding: 50px;
+}
+
+.faq-page header {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: max-content;
+  background-image: url("../Assets/Bdome-2-1.jpg");
+  background-position: center;
+}
+
+.faq-page header h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.faq-page header p {
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.faq-page header img {
+  position: relative;
+  z-index: -1;
+  top: -50px;
+}
+
+.faq-section {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.faq-section .faq-card-closed,
+.faq-section .faq-card-open {
+  background-color: rgb(56, 55, 55);
+  font-size: 20px;
+  width: 70%;
+  border-radius: 20px;
+  padding: 25px;
+  overflow: hidden;
+  border-bottom: 2px solid gold;
+}
+/* .faq-section  .faq-card-open{
+    max-height: 400px;
+}
+.faq-section  .faq-card-closed{
+    max-height: 35px;
+} */
+
+.faq-section .faq-quest {
+  /* position: relative;   */
+  display: flex;
+  z-index: 5;
+  color: white;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.faq-section .faq-ans {
+  overflow-y: hidden;
+  color: rgb(162, 162, 162);
+  transition: 1s all;
+}
+
+.faq-section .faq-ans p {
+  width: 95%;
+}
+
+.faq-section .faq-card-closed .faq-ans {
+  max-height: 0;
+  transition: 0.7s all;
+}
+
+.faq-section .faq-card-open .faq-ans {
+  max-height: 500px;
+  transition: 1s all;
+}
+
+.faq-section .faq-quest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-section .opener {
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.faq-section .faq-card-open .opener {
+  transform: rotateZ(180deg);
+  background: white;
+  color: black;
+}
+
+.faq-section .faq-card-closed .opener {
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .faq-page header h1 {
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+  }
+  .faq-page .header-text {
+    padding: 20px;
+    padding-top: 25%;
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.292),
+      rgba(0, 0, 0, 0.899)
+    );
+  }
+
+  .faq-section {
+    padding-top: 50px;
+  }
+  .faq-page .header-text p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .faq-section .faq-card-closed,
+  .faq-section .faq-card-open {
+    border-radius: 15px;
+  }
+
+  .faq-page .faq-ans {
+    font-size: 15px;
+    padding: 2px 0;
+  }
+  .faq-page .faq-quest {
+    padding: 5px;
+    font-size: 15px;
+    align-items: flex-start;
+    display: flex;
+  }
+}

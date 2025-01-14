@@ -1,0 +1,137 @@
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../Assets/aboutBg.png");
+  background-size: cover;
+
+  gap: 50px;
+  width: 100%;
+}
+
+.projects-page .header-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.218),
+    rgba(0, 0, 0, 0.996)
+  );
+  background-position: center;
+  height: 350px;
+  width: 100%;
+  gap: 40px;
+  padding: 50px;
+}
+
+.projects-page > header {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-image: url("../Assets/microcontroller.jpg");
+  width: 100%;
+  background-position: 0px -100px;
+}
+
+.projects-page header h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.projects-page header p {
+  font-size: 25px;
+}
+.projects-page h1 {
+  font-size: 60px;
+  color: white;
+  margin-left: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .projects-page header h1 {
+    font-size: 60px;
+  }
+  .projects-page header p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .projects-page .header-text {
+    /* justify-content: start; */
+    padding: 30px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.395),
+      rgba(0, 0, 0, 0.996)
+    );
+    height: 330px;
+  }
+
+  .projects-page header {
+    height: 400px;
+    width: 100%;
+    background-position: center -70px;
+  }
+  .projects-page header h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+  .projects-page header p {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 560px) {
+  .projects-page .header-text {
+    padding: 20px;
+  }
+  .projects-page > header h1 {
+    margin: 0;
+    font-size: 50px;
+  }
+  .projects-page header p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .projects-page .header-text {
+    padding: 15px;
+  }
+  .projects-page > header h1 {
+    font-size: 40px;
+  }
+  .projects-page header p {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .projects-page .header-text {
+    padding: 15px;
+    height: 300px;
+  }
+
+  .projects-page > header {
+    height: 350px;
+  }
+  .projects-page > header h1 {
+    font-size: 40px;
+  }
+  .projects-page header p {
+    font-size: 17px;
+    text-align: center;
+  }
+}

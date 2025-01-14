@@ -1,0 +1,84 @@
+.facility-card {
+  border-radius: 10px;
+  height: 320px;
+  width: 330px;
+  user-select: none;
+  /* margin: 10px; */
+}
+
+.facility-card img {
+  height: 320px;
+  width: 330px;
+  border-radius: 10px;
+}
+
+.facility-card .card-overlay {
+  overflow: hidden;
+  position: sticky;
+  bottom: 102%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 320px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.facility-card:hover .card-overlay {
+  background-color: rgba(0, 0, 0, 0.797);
+}
+
+.facility-card .card-overlay h2 {
+  position: sticky;
+  top: 30%;
+  visibility: hidden;
+  color: rgba(255, 255, 255, 0);
+  font-size: 25px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.facility-card:hover h2,
+.facility-card:hover p {
+  color: white;
+  visibility: visible;
+}
+
+@media screen and (max-width: 550px) {
+  .facility-card {
+    height: 300px;
+    width: 300px;
+  }
+  .facility-card img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .facility-card .card-overlay {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .facility-card {
+    height: 230px;
+    width: 210px;
+  }
+  .facility-card img {
+    height: 230px;
+    width: 211px;
+  }
+
+  .facility-card .card-overlay {
+    height: 230px;
+  }
+
+  .facility-card .card-overlay h2 {
+    font-size: 25px;
+    top: 15px;
+  }
+
+  .facility-card .card-overlay p {
+    top: 50px;
+    font-size: 12px;
+    padding: 20px;
+  }
+}

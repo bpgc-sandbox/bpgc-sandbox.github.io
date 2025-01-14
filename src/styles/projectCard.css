@@ -1,0 +1,100 @@
+.project-card {
+  border-radius: 10px;
+  height: 320px;
+  width: 330px;
+  background-color: antiquewhite;
+  user-select: none;
+  /* margin: 10px; */
+}
+
+.project-card img {
+  height: 320px;
+  width: 330px;
+  border-radius: 10px;
+}
+
+.project-card .card-overlay {
+  overflow: hidden;
+  position: sticky;
+  bottom: 102%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 320px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.project-card:hover .card-overlay {
+  background-color: rgba(255, 255, 255, 0.797);
+}
+
+.project-card .card-overlay h2 {
+  position: sticky;
+  top: 30px;
+  visibility: hidden;
+  color: rgba(255, 255, 255, 0);
+  font-size: 29px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.project-card .card-overlay p {
+  color: rgba(255, 255, 255, 0);
+  position: sticky;
+  visibility: hidden;
+  top: 90px;
+  text-align: left;
+  padding: 25px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.project-card:hover h2 {
+  color: black;
+  visibility: visible;
+}
+.project-card:hover p {
+  color: black;
+  font-size: 18px;
+  visibility: visible;
+}
+
+@media screen and (max-width: 550px) {
+  .project-card {
+    height: 300px;
+    width: 300px;
+  }
+  .project-card img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .project-card .card-overlay {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .project-card {
+    height: 230px;
+    width: 210px;
+  }
+  .project-card img {
+    height: 230px;
+    width: 211px;
+  }
+
+  .project-card .card-overlay {
+    height: 230px;
+  }
+
+  .project-card .card-overlay h2 {
+    font-size: 25px;
+    top: 15px;
+  }
+
+  .project-card .card-overlay p {
+    top: 50px;
+    font-size: 12px;
+    padding: 20px;
+  }
+}

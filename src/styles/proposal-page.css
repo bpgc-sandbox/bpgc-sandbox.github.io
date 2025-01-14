@@ -1,0 +1,153 @@
+.proposal-page {
+    font-family: "Poppins";
+}
+.proposal-page > header {
+    background-image: url("../Assets/fingerprint.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -350px;
+    height: 200px;
+    width: 100%;
+    height: 45vh;
+}
+
+.proposal-page header .header-text {
+    color: white;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.879)
+    );
+    text-align: center;
+    align-content: center;
+    height: 45vh;
+    width: 100%;
+}
+.proposal-page header .header-text p {
+    color: white;
+    font-size: large;
+    padding-top: 10px;
+}
+
+.proposal-page h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.proposal-page h2 {
+    color: gold;
+    font-size: 40px;
+}
+
+.proposal-page h3 {
+    color: gold;
+
+    font-size: 30px;
+}
+
+.proposal-page main {
+    padding: 60px 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.proposal-page .access {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 35, 35);
+    gap: 10px;
+    padding: 50px 30px;
+    border-radius: 2%;
+    height: 550px;
+}
+
+.proposal-page .access p {
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+}
+.proposal-page .one-req p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.proposal-page .access-details {
+    display: flex;
+    padding: 5px 10px;
+    flex-direction: column;
+    font-size: 18px;
+    color: white;
+}
+
+.proposal-page .access-details li {
+    padding: 5px 0;
+    max-width: 100%; /* Ensure the width doesn't exceed the container */
+    white-space: normal; /* Ensure text wraps correctly */
+    list-style-type: disc;
+}
+
+.access-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.apply-btn {
+    font-size: 25px;
+    padding: 8px 25px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.apply-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 400px) {
+    .proposal-page main {
+        flex-direction: column;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .proposal-page .access {
+        height: max-content;
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .proposal-page h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .proposal-page .access h3 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .proposal-page .access-details li {
+        font-size: 16px;
+    }
+
+    .proposal-page .one-req p {
+        font-size: 18px;
+    }
+
+    .apply-btn {
+        font-size: 20px;
+    }
+    .proposal-page > header {
+        background-position-y: -30px;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,174 @@
+#about-section {
+  background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 2% 8%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 150px;
+}
+
+#about-section .section-header {
+  color: white;
+  font-size: 80px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#about-section .section-header::after {
+  content: "";
+  background-color: rgba(128, 128, 128, 0.501);
+  width: 100%;
+  height: 1px;
+}
+
+#about-section .about-card-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-card .about-header {
+  font-size: 45px;
+}
+.about-card p {
+  font-size: 25px;
+  color: rgb(191, 191, 191);
+}
+
+#about-section .about-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 2%;
+
+  border-radius: 20px;
+  border: 1px rgba(255, 255, 255, 0.096) solid;
+  backdrop-filter: blur(5px);
+
+  transition: all 0.5s;
+}
+
+#about-section .about-card .about-card-img {
+  width: 30%;
+  height: 80%;
+  z-index: 4;
+}
+
+#about-section .about-card .about-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 4%;
+  width: 65%;
+  color: white;
+}
+
+.section-header span {
+  color: gold;
+  font-weight: 700;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px rgba(255, 217, 0, 0.653);
+}
+
+.about-card:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+.about-card:nth-of-type(2n):hover {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-card .about-header {
+    font-size: 38px;
+  }
+  .about-card p {
+    font-size: 20px;
+  }
+
+  #about-section .section-header {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .about-card .about-header {
+    font-size: 35px;
+  }
+  .about-card p {
+    font-size: 17px;
+  }
+
+  #about-section .section-header {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .about-card .about-header {
+    font-size: 30px;
+  }
+  .about-card p {
+    font-size: 15px;
+  }
+
+  #about-section .section-header {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .about-card .about-header {
+    font-size: 20px;
+  }
+  .about-card p {
+    font-size: 12px;
+  }
+
+  #about-section .section-header {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .about-card .about-header {
+    font-size: 20px;
+  }
+  .about-card p {
+    font-size: 12px;
+  }
+
+  #about-section .section-header {
+    font-size: 25px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #about-section {
+    padding: 80px 20px;
+  }
+  .about-card .about-header {
+    font-size: 16px;
+  }
+  .about-card p {
+    font-size: 12px;
+  }
+
+  #about-section .section-header {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  #about-section .about-card {
+    flex-direction: column;
+    padding: 4%;
+  }
+  #about-section .about-card .about-card-details {
+    width: 90%;
+    padding: 2%;
+  }
+  #about-section .about-card .about-card-img {
+    width: 50%;
+  }
+}

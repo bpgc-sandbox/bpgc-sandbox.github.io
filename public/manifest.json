@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sandbox",
+  "name": "Sandbox - BITS Goa's Incubation Center",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,7 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
+  "description": "Sandbox is BITS Goa's Incubation Center fostering innovation with State-of-the-Art facilities and guidance.",
+  "lang": "en",
   "background_color": "#ffffff"
 }

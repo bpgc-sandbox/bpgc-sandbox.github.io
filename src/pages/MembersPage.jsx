@@ -34,6 +34,7 @@ const MembersPage = memo(() => {
               name={element.name}
               image={element.image}
               mail={element.email}
+              linkedin = {element.linkedIn}
             />
           );
         })}

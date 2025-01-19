@@ -16,7 +16,7 @@ import ajinkya from "../Assets/studentsss/ajinkya.webp";
 import om from "../Assets/studentsss/om.jpg";
 import aniket from "../Assets/students/aniket.jpeg";
 import varinder from "../Assets/faculty/varinder1.jpeg";
-
+import naveen from "../Assets/faculty/Naveen-Gupta.jpg";
 let student = [
   {
     name: "Om Jaiswal",
@@ -133,9 +133,11 @@ let student = [
 
 let faculty = [
   {
-    image: varinder,
-    name: "Dr. Varinder Singh",
-    url: "https://www.bits-pilani.ac.in/goa/varinder-singh/",
+    image: naveen,
+    name: "Prof. Naveen Gupta",
+    url: "https://www.bits-pilani.ac.in/goa/naveen-gupta/",
+    email:"naveeng@goa.bits-pilani.ac.in",
+    linkedIn:"https://www.linkedin.com/in/naveen-gupta-635776ab/"
   },
 ];
 
